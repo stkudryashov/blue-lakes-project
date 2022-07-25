@@ -1,9 +1,9 @@
 <template>
-  <HelloWorld msg="It`s Works! Hello World" />
+  <TheHeader />
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from './components/TheHeader.vue'
 </script>
 
 <style>
