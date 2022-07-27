@@ -8,7 +8,7 @@
     </the-header-item>
 
     <!-- Change Club -->
-    <div v-if="showDropdown" class="absolute right-0 top-full">
+    <div v-if="showDropdown" class="absolute right-0 top-full z-10">
       <div class="bg-gray-800 w-56 flex flex-col items-start overflow-hidden rounded-b">
         <slot />
       </div>
