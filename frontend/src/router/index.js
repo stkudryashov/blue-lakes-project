@@ -6,12 +6,12 @@ import MainPage from '../pages/MainPage.vue'
 const routes = [
   {
     path: '/',
-    name: 'Main',
+    name: 'main',
     component: MainPage,
   },
   {
     path: '/login',
-    name: 'Login',
+    name: 'login',
     meta: { layout: 'empty-layout' },
     component: LoginPage,
   },

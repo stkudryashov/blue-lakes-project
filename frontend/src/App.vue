@@ -1,7 +1,7 @@
 <template>
-  <Component :is="layout">
-    <RouterView />
-  </Component>
+  <component :is="layout">
+    <router-view />
+  </component>
 </template>
 
 <script>
@@ -29,5 +29,13 @@ export default {
 <style>
 body {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.layout-base {
+  @apply flex flex-col min-h-screen;
+}
+
+.layout-content {
+  @apply flex flex-1;
 }
 </style>

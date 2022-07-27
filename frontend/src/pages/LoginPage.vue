@@ -56,6 +56,9 @@ export default {
       hasErrors: false
     }
   },
+  // mounted() {
+  //   this.$router.push({name: 'main'})
+  // },
   methods: {
     login() {
       axios.post('/accounts/login/', {
