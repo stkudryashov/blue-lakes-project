@@ -1,9 +1,9 @@
 <template>
   <header class="bg-gray-800">
     <div class="container mx-auto text-sm">
-      <div class="flex justify-between items-center h-16">
+      <div class="flex justify-between items-center flex-wrap">
         <!-- Header Sections -->
-        <div class="flex items-center h-full">
+        <div class="flex items-center flex-wrap">
           <!-- Logo -->
           <a href="" class="block w-46 mr-12 flex-shrink-0">
             <img src="/logo.png" alt="Logo" class="h-8">
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Personal Area -->
-        <div class="flex items-center h-full">
+        <div class="flex items-center">
           <!-- User -->
           <TheHeaderItem title="Kudryashov" :prepend="false">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
