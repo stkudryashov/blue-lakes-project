@@ -1,3 +1,6 @@
+import { AuthAPI } from '../../api/AuthAPI/index.js'
+import { defaultRequest } from '../../api/config.js'
+
 export const AuthModule = {
   namespaced: true,
   state() {
@@ -8,18 +11,23 @@ export const AuthModule = {
       }
     }
   },
-  getters: {
-    getUsername(state) {
-      return state.credentials.username
-    }
-  },
   mutations: {
     setToken(state, token) {
       state.credentials.token = token
       localStorage.setItem('token', token)
     },
-    setUsername(state, username) {
-      state.credentials.username = username
+  },
+  actions: {
+    onLogin({commit}, {username, password}) {
+      return AuthAPI.login(username, password)
+      .then(response => {
+        console.log(response)
+
+        const token = response.data.access
+        commit('setToken', token)
+
+        defaultRequest.defaults.headers['Authorization'] = `Bearer ${token}`
+      })
     }
   }
 }

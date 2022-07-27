@@ -16,4 +16,7 @@ const defaultConfig = {
   }
 }
 
+const token = localStorage.getItem('token')
+if (token) defaultConfig.headers['Authorization'] = `Bearer ${token}`
+
 export const defaultRequest = axios.create(defaultConfig)

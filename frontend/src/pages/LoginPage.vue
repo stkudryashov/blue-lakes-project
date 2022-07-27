@@ -43,8 +43,6 @@
 </template>
 
 <script>
-import {AuthAPI} from '../api/AuthAPI/index.js'
-
 export default {
   name: 'LoginPage',
   data() {
@@ -58,22 +56,21 @@ export default {
   },
   methods: {
     login() {
-      AuthAPI.login(this.loginForm.username, this.loginForm.password)
-        .then(response => {
-          console.log(response)
-          this.$store.commit('AuthModule/setToken', response.data.access)
-          localStorage.setItem('token', response.data.access)
+      const payload = {
+        username: this.loginForm.username,
+        password: this.loginForm.password
+      }
+
+      this.$store.dispatch('AuthModule/onLogin', payload)
+        .then(() => {
           this.$router.push({name: 'main'})
         })
         .catch(error => {
           console.log(error)
+
           this.hasErrors = true
           setTimeout(() => { this.hasErrors = false }, 1000)
       })
-    },
-    logout() {
-      localStorage.removeItem('token')
-      location.reload()
     }
   }
 }
