@@ -24,12 +24,12 @@ export default {
   },
   computed: {
     isCollapsed() {
-      return this.$store.state.sidebarCollapsed
+      return this.$store.getters['SidebarModule/getSidebarStatus']
     }
   },
   methods: {
     sidebarShow() {
-      this.$store.commit('sidebarShow')
+      this.$store.dispatch('SidebarModule/changeSidebarStatus')
     }
   }
 }

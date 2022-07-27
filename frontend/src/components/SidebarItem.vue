@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     isCollapsed() {
-      return this.$store.state.sidebarCollapsed
+      return this.$store.getters['SidebarModule/getSidebarStatus']
     }
   },
 }

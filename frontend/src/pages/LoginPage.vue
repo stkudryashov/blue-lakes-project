@@ -61,6 +61,7 @@ export default {
       AuthAPI.login(this.loginForm.username, this.loginForm.password)
         .then(response => {
           console.log(response)
+          this.$store.commit('AuthModule/setToken', response.data.access)
           localStorage.setItem('token', response.data.access)
           this.$router.push({name: 'main'})
         })

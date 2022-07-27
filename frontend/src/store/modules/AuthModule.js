@@ -21,14 +21,5 @@ export const AuthModule = {
     setUsername(state, username) {
       state.credentials.username = username
     }
-  },
-  actions: {
-    onLogin({commit}, {username, password}) {
-      AuthAPI.login(username, password)
-        .then(response => {
-          console.log(response)
-          commit('setToken', response.data.access)
-      })
-    }
   }
 }
