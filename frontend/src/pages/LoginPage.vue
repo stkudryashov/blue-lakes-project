@@ -56,9 +56,6 @@ export default {
       hasErrors: false
     }
   },
-  // mounted() {
-  //   this.$router.push({name: 'main'})
-  // },
   methods: {
     login() {
       axios.post('/accounts/login/', {
@@ -69,7 +66,7 @@ export default {
             console.log(response)
 
             localStorage.setItem('token', response.data.access)
-            location.reload()
+            this.$router.push({name: 'main'})
           })
           .catch(error => {
             console.log(error)

@@ -4,7 +4,7 @@
       <slot />
     </div>
 
-    <span class="truncate" :class="{ 'sidebar-item-hidden': hidden }">
+    <span class="truncate" :class="{ 'sidebar-item-hidden': isCollapsed }">
       {{ title }}
     </span>
 
@@ -25,12 +25,13 @@ export default {
     prepend: {
       type: Boolean,
       default: true
-    },
-    hidden: {
-      type: Boolean,
-      default: false
     }
-  }
+  },
+  computed: {
+    isCollapsed() {
+      return this.$store.state.sidebarCollapsed
+    }
+  },
 }
 </script>
 
