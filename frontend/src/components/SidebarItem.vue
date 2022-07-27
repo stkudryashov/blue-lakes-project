@@ -4,7 +4,7 @@
       <slot />
     </div>
 
-    <span v-if="!hidden" class="truncate">
+    <span class="truncate" :class="{ 'sidebar-item-hidden': hidden }">
       {{ title }}
     </span>
 
@@ -41,5 +41,10 @@ export default {
 
 .sidebar-item-icon {
   @apply flex items-center;
+}
+
+.sidebar-item-hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 </style>
