@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import {AuthAPI} from '../api/AuthAPI/index.js'
 
 export default {
   name: 'LoginPage',
@@ -58,22 +58,17 @@ export default {
   },
   methods: {
     login() {
-      axios.post('/accounts/login/', {
-        username: this.loginForm.username,
-        password: this.loginForm.password
+      AuthAPI.login(this.loginForm.username, this.loginForm.password)
+        .then(response => {
+          console.log(response)
+          localStorage.setItem('token', response.data.access)
+          this.$router.push({name: 'main'})
+        })
+        .catch(error => {
+          console.log(error)
+          this.hasErrors = true
+          setTimeout(() => { this.hasErrors = false }, 1000)
       })
-          .then(response => {
-            console.log(response)
-
-            localStorage.setItem('token', response.data.access)
-            this.$router.push({name: 'main'})
-          })
-          .catch(error => {
-            console.log(error)
-
-            this.hasErrors = true
-            setTimeout(() => { this.hasErrors = false }, 1000)
-          })
     },
     logout() {
       localStorage.removeItem('token')
