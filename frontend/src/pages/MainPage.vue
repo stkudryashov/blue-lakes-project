@@ -12,6 +12,85 @@
       </svg>
     </sidebar-item>
   </sidebar>
+
+  <section class="flex-1">
+    <div class="m-3 overflow-x-auto relative shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-400">
+        <thead class="text-xs uppercase bg-gray-700 text-gray-400">
+        <tr>
+          <th scope="col" class="py-3 px-6">
+            Имя
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Username
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Номер телефона
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Тариф
+          </th>
+          <th scope="col" class="py-3 px-6">
+            <span class="sr-only">Личное дело</span>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
+            Александр
+          </th>
+          <td class="py-4 px-6">
+            Kudryashov
+          </td>
+          <td class="py-4 px-6">
+            8 (999) 999-99-99
+          </td>
+          <td class="py-4 px-6">
+            Platinum
+          </td>
+          <td class="py-4 px-6 text-right">
+            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
+          </td>
+        </tr>
+        <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
+            Илья
+          </th>
+          <td class="py-4 px-6">
+            Next_Target
+          </td>
+          <td class="py-4 px-6">
+            8 (999) 999-99-99
+          </td>
+          <td class="py-4 px-6">
+            Gold
+          </td>
+          <td class="py-4 px-6 text-right">
+            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
+          </td>
+        </tr>
+        <tr class="bg-gray-800 hover:bg-gray-600">
+          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
+            Анастасия
+          </th>
+          <td class="py-4 px-6">
+            Sia
+          </td>
+          <td class="py-4 px-6">
+            8 (999) 999-99-99
+          </td>
+          <td class="py-4 px-6">
+            Gold
+          </td>
+          <td class="py-4 px-6 text-right">
+            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 </template>
 
 <script>
