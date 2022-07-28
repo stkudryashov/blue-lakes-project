@@ -15,15 +15,11 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 
-class UserInfoView(APIView):
-    """Получение информации об аккаунте отправителя запроса"""
+class TokenVerifyView(APIView):
+    """Получение данных пользователя по JWT Token"""
 
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        """Возвращает информацию об аккаунте"""
-
-        user = request.user
-        data = {'username': user.username, 'current_club': user.current_club.street}
-
-        return Response(data)
+        serializer = UserSerializer(request.user)
+        return Response(serializer.data)

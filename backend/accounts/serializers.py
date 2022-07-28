@@ -12,7 +12,9 @@ class UserSerializer(serializers.ModelSerializer):
 
     email = serializers.EmailField(required=True)
 
+    current_club_name = serializers.CharField(source='current_club.street', read_only=True)
+
     class Meta:
         model = User
-        fields = ('id', 'username', 'password', 'first_name', 'last_name', 'email')
-        read_only_fields = ('id',)
+        fields = ('id', 'username', 'password', 'first_name', 'last_name', 'email', 'current_club_name')
+        read_only_fields = ('id', 'current_club_name')
