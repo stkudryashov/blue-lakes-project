@@ -8,10 +8,7 @@ export const AuthModule = {
       credentials: {
         token: localStorage.getItem('token') || null,
       },
-      user: {
-        username: localStorage.getItem('username') || null,
-        current_club: localStorage.getItem('current_club') || null,
-      }
+      user: JSON.parse(localStorage.getItem('user'))
     }
   },
   getters: {
@@ -29,11 +26,8 @@ export const AuthModule = {
       localStorage.removeItem('token')
     },
     setUser(state, data) {
-      state.user.username = data.username
-      localStorage.setItem('username', data.username)
-
-      state.user.current_club = data.current_club
-      localStorage.setItem('current_club', data.current_club)
+      state.user = data
+      localStorage.setItem('user', JSON.stringify(data))
     }
   },
   actions: {

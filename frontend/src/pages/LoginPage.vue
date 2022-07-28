@@ -63,7 +63,7 @@ export default {
 
       this.$store.dispatch('AuthModule/onLogin', payload)
         .then(() => {
-          this.$router.push({name: 'ClientBase'})
+          location.reload()
         })
         .catch(error => {
           console.log(error)
