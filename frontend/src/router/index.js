@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store/index.js'
 
 import LoginPage from '../pages/LoginPage.vue'
-import MainPage from '../pages/MainPage.vue'
+import MainPage from '../pages/ClientsPage.vue'
 
 const routes = [
   {

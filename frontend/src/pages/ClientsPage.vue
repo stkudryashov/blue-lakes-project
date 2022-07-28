@@ -14,32 +14,31 @@
   </sidebar>
 
   <section class="flex-1">
-    <div class="m-3 overflow-x-auto relative shadow-md sm:rounded-lg">
-      <!-- My Table Component -->
-      <table class="v-table">
-        <thead class="v-table-head">
+    <div class="m-3">
+      <v-table>
+        <thead>
           <tr>
-            <th scope="col" class="py-3 px-6">username</th>
-            <th scope="col" class="py-3 px-6">имя</th>
-            <th scope="col" class="py-3 px-6">фамилия</th>
-            <th scope="col" class="py-3 px-6">email</th>
-            <th scope="col" class="py-3 px-6">клуб</th>
-            <th scope="col" class="py-3 px-6"></th>
+            <th>Username</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Email</th>
+            <th>Клуб</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr class="bg-gray-800 hover:bg-gray-600" v-for="user in usersList" :key="user.id">
-            <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">{{ user.username }}</th>
-            <td class="py-4 px-6">{{ user.first_name }}</td>
-            <td class="py-4 px-6">{{ user.last_name }}</td>
-            <td class="py-4 px-6">{{ user.email }}</td>
-            <td class="py-4 px-6">{{ user.current_club_name }}</td>
-            <td class="py-4 px-6 text-right">
-              <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
+            <th>{{ user.username }}</th>
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.current_club_name }}</td>
+            <td class="text-right">
+              <a href="#" class="font-medium text-purple-400 hover:underline">Открыть</a>
             </td>
           </tr>
         </tbody>
-      </table>
+      </v-table>
     </div>
   </section>
 </template>
@@ -89,11 +88,5 @@ export default {
 </script>
 
 <style scoped>
-.v-table {
-  @apply w-full text-sm text-left text-gray-400;
-}
 
-.v-table-head {
-  @apply text-xs uppercase bg-gray-700 text-gray-400;
-}
 </style>
