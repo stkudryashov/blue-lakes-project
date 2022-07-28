@@ -1,4 +1,4 @@
-import { AuthAPI } from '../../api/AuthAPI/index.js'
+import { AuthAPI } from '../../api/accountsAPI/index.js'
 import { defaultRequest } from '../../api/config.js'
 
 export const AuthModule = {
@@ -16,6 +16,10 @@ export const AuthModule = {
       state.credentials.token = token
       localStorage.setItem('token', token)
     },
+    delToken(state) {
+      state.credentials.token = null
+      localStorage.removeItem('token')
+    }
   },
   actions: {
     onLogin({commit}, {username, password}) {
@@ -27,6 +31,12 @@ export const AuthModule = {
         commit('setToken', token)
 
         defaultRequest.defaults.headers['Authorization'] = `Bearer ${token}`
+      })
+    },
+    onVerify({commit}, {token}) {
+      return AuthAPI.verify(token)
+        .then(response => {
+          console.log(response)
       })
     }
   }
