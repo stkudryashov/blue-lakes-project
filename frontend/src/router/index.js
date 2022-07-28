@@ -3,13 +3,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store/index.js'
 
 import LoginPage from '../pages/LoginPage.vue'
-import MainPage from '../pages/ClientsPage.vue'
+import MainPage from '../pages/ClientBase.vue'
+import PersonalPage from '../pages/PersonalPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'ClientBase',
     component: MainPage,
+  },
+  {
+    path: '/personal',
+    name: 'Personal',
+    component: PersonalPage,
   },
   {
     path: '/login',
