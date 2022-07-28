@@ -10,7 +10,10 @@ export const AuthModule = {
       credentials: {
         token: localStorage.getItem('token') || null,
       },
-      user: JSON.parse(localStorage.getItem('user'))
+      user: {
+        username: '',
+        current_club_name: ''
+      }
     }
   },
   getters: {
@@ -29,39 +32,28 @@ export const AuthModule = {
     },
     setUser(state, data) {
       state.user = data
-      localStorage.setItem('user', JSON.stringify(data))
     }
   },
   actions: {
     onLogin({commit, dispatch}, {username, password}) {
       return AuthAPI.login(username, password)
-      .then(response => {
-        console.log(response)
-
-        const token = response.data.access
-        commit('setToken', token)
-
-        defaultRequest.defaults.headers['Authorization'] = `Bearer ${token}`
-        dispatch('getInfo')
-      })
-    },
-    onVerify({commit}, {token}) {
-      return AuthAPI.verify(token)
         .then(response => {
           console.log(response)
-      })
-        .catch(error => {
-          if (error.response.status === 401) {
-            store.commit('AuthModule/delToken')
-          }
-      })
+
+          const token = response.data.access
+          commit('setToken', token)
+
+          defaultRequest.defaults.headers['Authorization'] = `Bearer ${token}`
+          dispatch('onVerify')})
     },
-    getInfo({commit}) {
-      AuthAPI.info()
-      .then(response => {
-        console.log(response)
-        commit('setUser', response.data)
-      })
+    onVerify({commit}) {
+      return AuthAPI.verify()
+        .then(response => {
+          console.log(response)
+          commit('setUser', response.data)})
+        .catch(error => {
+          if (error.response.status === 401)
+            store.commit('AuthModule/delToken')})
     }
   }
 }

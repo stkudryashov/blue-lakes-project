@@ -6,13 +6,8 @@ export const AuthAPI = {
     const data = { username, password }
     return loginRequest.post(url, data)
   },
-  verify(token) {
+  verify() {
     const url = '/accounts/login/verify/'
-    const data = { token }
-    return loginRequest.post(url, data)
-  },
-  info() {
-    const url = '/accounts/info/'
     return defaultRequest.get(url)
   }
 }

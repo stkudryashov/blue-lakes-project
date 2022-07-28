@@ -25,7 +25,7 @@ const router = createRouter({
 })
 
 router.beforeEach(async (to, from, next) => {
-  await store.dispatch('AuthModule/onVerify', {token: localStorage.getItem('token')})
+  await store.dispatch('AuthModule/onVerify')
 
   const isAuthenticated = localStorage.getItem('token')
 
