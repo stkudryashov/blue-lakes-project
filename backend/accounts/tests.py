@@ -39,3 +39,19 @@ class AccountsTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(User.objects.get().username, data.get('username'))
+
+
+def fill_database_users(count: int):
+    fake = Faker('ru-RU')
+
+    for i in range(count):
+        data = {
+            'username': fake.user_name(),
+            'password': fake.password(),
+            'first_name': fake.first_name(),
+            'last_name': fake.last_name(),
+            'email': fake.email(),
+            'current_club': Club.objects.all().order_by('?').first()
+        }
+
+        User.objects.create(**data)
