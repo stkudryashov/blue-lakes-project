@@ -3,14 +3,22 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store/index.js'
 
 import LoginPage from '../pages/LoginPage.vue'
-import MainPage from '../pages/ClientBase.vue'
+
+import ClientsPage from '../pages/ClientsPage.vue'
+import ClientsViewPage from '../pages/ClientsViewPage.vue'
+
 import PersonalPage from '../pages/PersonalPage.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'ClientBase',
-    component: MainPage,
+    name: 'Clients',
+    component: ClientsPage,
+  },
+  {
+    path: '/clients/:userId',
+    name: 'ClientsView',
+    component: ClientsViewPage,
   },
   {
     path: '/personal',
@@ -39,7 +47,7 @@ router.beforeEach(async (to, from, next) => {
     next({name: 'Login'})
   }
   else if (to.name === 'Login' && isAuthenticated) {
-    next({name: 'ClientBase'})
+    next({name: 'Clients'})
   }
   else next()
 })

@@ -34,7 +34,9 @@
             <td>{{ user.email }}</td>
             <td>{{ user.current_club_name }}</td>
             <td class="text-right">
-              <a href="#" class="font-medium text-purple-400 hover:underline">Открыть</a>
+              <router-link :to="{name: 'ClientsView', params: {userId: user.id}}">
+                <span class="font-medium text-purple-400 hover:underline">Открыть</span>
+              </router-link>
             </td>
           </tr>
         </tbody>
@@ -57,11 +59,12 @@ export default {
     return {
       usersList: [
         {
-          username: '',
-          first_name: '',
-          last_name: '',
-          email: '',
-          current_club_name: ''
+          id: Number,
+          username: String,
+          first_name: String,
+          last_name: String,
+          email: String,
+          current_club_name: String
         }
       ]
     }
@@ -81,7 +84,7 @@ export default {
           console.log(error)})
     }
   },
-  mounted() {
+  created() {
     this.loadUsers()
   }
 }

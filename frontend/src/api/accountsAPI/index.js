@@ -16,5 +16,9 @@ export const AccountsAPI = {
   loadUsers() {
     const url = '/accounts/'
     return defaultRequest.get(url)
+  },
+  getUser(userId) {
+    const url = `/accounts/${userId}/`
+    return defaultRequest.get(url)
   }
 }
