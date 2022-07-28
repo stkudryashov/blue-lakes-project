@@ -11,3 +11,10 @@ export const AuthAPI = {
     return defaultRequest.get(url)
   }
 }
+
+export const AccountsAPI = {
+  loadUsers() {
+    const url = '/accounts/'
+    return defaultRequest.get(url)
+  }
+}

@@ -15,78 +15,29 @@
 
   <section class="flex-1">
     <div class="m-3 overflow-x-auto relative shadow-md sm:rounded-lg">
-      <table class="w-full text-sm text-left text-gray-400">
-        <thead class="text-xs uppercase bg-gray-700 text-gray-400">
-        <tr>
-          <th scope="col" class="py-3 px-6">
-            Имя
-          </th>
-          <th scope="col" class="py-3 px-6">
-            Username
-          </th>
-          <th scope="col" class="py-3 px-6">
-            Номер телефона
-          </th>
-          <th scope="col" class="py-3 px-6">
-            Тариф
-          </th>
-          <th scope="col" class="py-3 px-6">
-            <span class="sr-only">Личное дело</span>
-          </th>
-        </tr>
+      <!-- My Table Component -->
+      <table class="v-table">
+        <thead class="v-table-head">
+          <tr>
+            <th scope="col" class="py-3 px-6">username</th>
+            <th scope="col" class="py-3 px-6">имя</th>
+            <th scope="col" class="py-3 px-6">фамилия</th>
+            <th scope="col" class="py-3 px-6">email</th>
+            <th scope="col" class="py-3 px-6">клуб</th>
+            <th scope="col" class="py-3 px-6"></th>
+          </tr>
         </thead>
         <tbody>
-        <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
-          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
-            Александр
-          </th>
-          <td class="py-4 px-6">
-            Kudryashov
-          </td>
-          <td class="py-4 px-6">
-            8 (999) 999-99-99
-          </td>
-          <td class="py-4 px-6">
-            Platinum
-          </td>
-          <td class="py-4 px-6 text-right">
-            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
-          </td>
-        </tr>
-        <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
-          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
-            Илья
-          </th>
-          <td class="py-4 px-6">
-            Next_Target
-          </td>
-          <td class="py-4 px-6">
-            8 (999) 999-99-99
-          </td>
-          <td class="py-4 px-6">
-            Gold
-          </td>
-          <td class="py-4 px-6 text-right">
-            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
-          </td>
-        </tr>
-        <tr class="bg-gray-800 hover:bg-gray-600">
-          <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">
-            Анастасия
-          </th>
-          <td class="py-4 px-6">
-            Sia
-          </td>
-          <td class="py-4 px-6">
-            8 (999) 999-99-99
-          </td>
-          <td class="py-4 px-6">
-            Gold
-          </td>
-          <td class="py-4 px-6 text-right">
-            <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
-          </td>
-        </tr>
+          <tr class="bg-gray-800 hover:bg-gray-600" v-for="user in usersList" :key="user.id">
+            <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap text-white">{{ user.username }}</th>
+            <td class="py-4 px-6">{{ user.first_name }}</td>
+            <td class="py-4 px-6">{{ user.last_name }}</td>
+            <td class="py-4 px-6">{{ user.email }}</td>
+            <td class="py-4 px-6">{{ user.current_club_name }}</td>
+            <td class="py-4 px-6 text-right">
+              <a href="#" class="font-medium text-blue-500 hover:underline">Открыть</a>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -94,18 +45,55 @@
 </template>
 
 <script>
-import Sidebar from '../components/Sidebar.vue'
-import SidebarItem from '../components/SidebarItem.vue'
+import Sidebar from '../components/sidebar/Sidebar.vue'
+import SidebarItem from '../components/sidebar/SidebarItem.vue'
+
+import VTable from '../components/VTable.vue'
+
+import { AccountsAPI } from '../api/accountsAPI/index.js'
 
 export default {
   name: 'MainPage',
+  data() {
+    return {
+      usersList: [
+        {
+          username: '',
+          first_name: '',
+          last_name: '',
+          email: '',
+          current_club_name: ''
+        }
+      ]
+    }
+  },
   components: {
+    VTable,
     Sidebar,
     SidebarItem
+  },
+  methods: {
+    loadUsers() {
+      AccountsAPI.loadUsers()
+        .then(response => {
+          console.log(response.data)
+          this.usersList = response.data})
+        .catch(error => {
+          console.log(error)})
+    }
+  },
+  mounted() {
+    this.loadUsers()
   }
 }
 </script>
 
 <style scoped>
+.v-table {
+  @apply w-full text-sm text-left text-gray-400;
+}
 
+.v-table-head {
+  @apply text-xs uppercase bg-gray-700 text-gray-400;
+}
 </style>
