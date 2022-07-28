@@ -1,6 +1,8 @@
 import { AuthAPI } from '../../api/accountsAPI/index.js'
 import { defaultRequest } from '../../api/config.js'
 
+import store from  '../index.js'
+
 export const AuthModule = {
   namespaced: true,
   state() {
@@ -47,6 +49,11 @@ export const AuthModule = {
       return AuthAPI.verify(token)
         .then(response => {
           console.log(response)
+      })
+        .catch(error => {
+          if (error.response.status === 401) {
+            store.commit('AuthModule/delToken')
+          }
       })
     },
     getInfo({commit}) {

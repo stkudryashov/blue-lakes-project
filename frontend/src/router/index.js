@@ -5,54 +5,37 @@ import store from '../store/index.js'
 import LoginPage from '../pages/LoginPage.vue'
 import MainPage from '../pages/MainPage.vue'
 
-const authGuard = (to, from, next) => {
-  const isAuthorized = localStorage.getItem('token')
-
-  if (!isAuthorized) {
-    next({name: 'Login'})
-  }
-  else {
-    next()
-  }
-}
-
-const authVerify = (to, from, next) => {
-  const token = localStorage.getItem('token')
-
-  if (token) {
-    store.dispatch('AuthModule/onVerify', {token})
-      .then(() => {
-        next({name: 'ClientBase'})
-      })
-      .catch(error => {
-        console.log(error)
-        next()
-    })
-  }
-  else {
-    next()
-  }
-}
-
 const routes = [
   {
     path: '/',
     name: 'ClientBase',
     component: MainPage,
-    beforeEnter: authGuard
   },
   {
     path: '/login',
     name: 'Login',
     meta: { layout: 'empty-layout' },
     component: LoginPage,
-    beforeEnter: authVerify
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.beforeEach(async (to, from, next) => {
+  await store.dispatch('AuthModule/onVerify', {token: localStorage.getItem('token')})
+
+  const isAuthenticated = localStorage.getItem('token')
+
+  if (to.name !== 'Login' && !isAuthenticated) {
+    next({name: 'Login'})
+  }
+  else if (to.name === 'Login' && isAuthenticated) {
+    next({name: 'ClientBase'})
+  }
+  else next()
 })
 
 export default router
