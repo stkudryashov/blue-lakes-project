@@ -1,4 +1,4 @@
-import { loginRequest } from '../config.js'
+import { loginRequest, defaultRequest } from '../config.js'
 
 export const AuthAPI = {
   login(username, password) {
@@ -10,5 +10,9 @@ export const AuthAPI = {
     const url = '/accounts/login/verify/'
     const data = { token }
     return loginRequest.post(url, data)
+  },
+  info() {
+    const url = '/accounts/info/'
+    return defaultRequest.get(url)
   }
 }

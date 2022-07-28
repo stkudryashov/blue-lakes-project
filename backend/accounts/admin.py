@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin
 
-from .models import User
+from .models import User, Club
 
 
 @admin.register(User)
@@ -14,7 +14,7 @@ class CustomUserAdmin(UserAdmin):
 
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ('first_name', 'last_name')}),
+        ('Personal info', {'fields': ('first_name', 'last_name', 'current_club')}),
         ('Permissions', {
             'fields': ('is_active', 'is_staff', 'is_superuser',),
         }),
@@ -31,3 +31,14 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.unregister(Group)
+
+
+@admin.register(Club)
+class ClubAdmin(admin.ModelAdmin):
+    list_display = ('id_name', 'city', 'street')
+
+    fieldsets = (
+        (None, {'fields': ('id_name',)}),
+        ('Адрес', {'fields': ('city', 'street')}),
+        ('Ссылки', {'fields': ('site_link', 'bot_link',)})
+    )

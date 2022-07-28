@@ -7,8 +7,16 @@ export const AuthModule = {
     return {
       credentials: {
         token: localStorage.getItem('token') || null,
-        username: null
+      },
+      user: {
+        username: localStorage.getItem('username') || null,
+        current_club: localStorage.getItem('current_club') || null,
       }
+    }
+  },
+  getters: {
+    getUserInfo(state) {
+      return state.user
     }
   },
   mutations: {
@@ -19,10 +27,17 @@ export const AuthModule = {
     delToken(state) {
       state.credentials.token = null
       localStorage.removeItem('token')
+    },
+    setUser(state, data) {
+      state.user.username = data.username
+      localStorage.setItem('username', data.username)
+
+      state.user.current_club = data.current_club
+      localStorage.setItem('current_club', data.current_club)
     }
   },
   actions: {
-    onLogin({commit}, {username, password}) {
+    onLogin({commit, dispatch}, {username, password}) {
       return AuthAPI.login(username, password)
       .then(response => {
         console.log(response)
@@ -31,12 +46,20 @@ export const AuthModule = {
         commit('setToken', token)
 
         defaultRequest.defaults.headers['Authorization'] = `Bearer ${token}`
+        dispatch('getInfo')
       })
     },
     onVerify({commit}, {token}) {
       return AuthAPI.verify(token)
         .then(response => {
           console.log(response)
+      })
+    },
+    getInfo({commit}) {
+      AuthAPI.info()
+      .then(response => {
+        console.log(response)
+        commit('setUser', response.data)
       })
     }
   }
