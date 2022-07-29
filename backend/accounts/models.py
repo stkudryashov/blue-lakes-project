@@ -22,10 +22,35 @@ class Club(models.Model):
         verbose_name_plural = 'Клубы'
 
 
+class UserPermission(models.Model):
+    permission = models.CharField(max_length=32, verbose_name='Идентификатор')
+    title = models.CharField(max_length=32, verbose_name='Название')
+
+    def __str__(self):
+        return f'{self.title}'
+
+    class Meta:
+        verbose_name = 'Право пользователя'
+        verbose_name_plural = 'Права пользователей'
+
+
+class UserType(models.Model):
+    title = models.CharField(max_length=32, verbose_name='Название группы')
+    permissions = models.ManyToManyField(UserPermission, verbose_name='Права группы')
+
+    def __str__(self):
+        return f'{self.title}'
+
+    class Meta:
+        verbose_name = 'Группа пользователей'
+        verbose_name_plural = 'Группы пользователей'
+
+
 class User(AbstractUser):
     """Модель пользователя CRM системы"""
 
     current_club = models.ForeignKey(Club, on_delete=models.PROTECT, related_name='users', verbose_name='Текущий клуб')
+    type = models.ForeignKey(UserType, on_delete=models.PROTECT, related_name='users', verbose_name='Группа', null=True)
 
     def __str__(self):
         return f'{self.username}'

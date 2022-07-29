@@ -53,7 +53,7 @@
           </router-link>
 
           <!-- Club -->
-          <TheHeaderItemDropdown :current_club="user.current_club_name">
+          <TheHeaderItemDropdown :current_club="user.current_club.street">
             <TheHeaderItemDropdownLink title="Академика Глушко" />
             <TheHeaderItemDropdownLink title="Хусаина Мавлютовао" />
             <TheHeaderItemDropdownLink title="Набережные Челны" />

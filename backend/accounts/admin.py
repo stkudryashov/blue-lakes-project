@@ -3,7 +3,18 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin
 
-from .models import User, Club
+from .models import User, UserType, UserPermission, Club
+
+
+@admin.register(UserPermission)
+class UserPermissionAdmin(admin.ModelAdmin):
+    list_display = ('title', 'permission')
+
+
+@admin.register(UserType)
+class UserTypeAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+    filter_horizontal = ('permissions',)
 
 
 @admin.register(User)
@@ -14,11 +25,11 @@ class CustomUserAdmin(UserAdmin):
 
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ('first_name', 'last_name', 'current_club')}),
-        ('Permissions', {
-            'fields': ('is_active', 'is_staff', 'is_superuser',),
+        ('Личная информация', {'fields': ('first_name', 'last_name', 'current_club')}),
+        ('Права доступа', {
+            'fields': ('type', 'is_active', 'is_staff', 'is_superuser',),
         }),
-        ('Important dates', {'fields': ('last_login', 'date_joined')}),
+        ('Прочее', {'fields': ('last_login', 'date_joined')}),
     )
 
     add_fieldsets = (

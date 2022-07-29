@@ -59,17 +59,7 @@ export default {
   name: 'ClientsPage',
   data() {
     return {
-      usersList: [
-        {
-          id: Number,
-          username: String,
-          first_name: String,
-          last_name: String,
-          phone_number: String,
-          current_club_name: String,
-          date_of_register: Date
-        }
-      ]
+      usersList: Array
     }
   },
   components: {

@@ -10,10 +10,7 @@ export const AuthModule = {
       credentials: {
         token: localStorage.getItem('token') || null,
       },
-      user: {
-        username: '',
-        current_club_name: ''
-      }
+      user: Object
     }
   },
   getters: {
