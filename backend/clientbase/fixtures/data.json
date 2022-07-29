@@ -1,0 +1,2402 @@
+[
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 1,
+  "fields": {
+    "username": "kkirillova",
+    "first_name": "Кира",
+    "last_name": "Лаврентьева",
+    "phone_number": "8 (718) 626-39-08",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.269Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 2,
+  "fields": {
+    "username": "luka_1973",
+    "first_name": "Лев",
+    "last_name": "Ширяева",
+    "phone_number": "8 (261) 663-9489",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.269Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 3,
+  "fields": {
+    "username": "panfil_1990",
+    "first_name": "Елизар",
+    "last_name": "Тихонов",
+    "phone_number": "87115061897",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.270Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 4,
+  "fields": {
+    "username": "beljaevaviktorija",
+    "first_name": "Казимир",
+    "last_name": "Блинова",
+    "phone_number": "8 (114) 232-4331",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.271Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 5,
+  "fields": {
+    "username": "kondrati24",
+    "first_name": "Кондратий",
+    "last_name": "Овчинникова",
+    "phone_number": "+7 (708) 191-1247",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.272Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 6,
+  "fields": {
+    "username": "zaharovepifan",
+    "first_name": "Полина",
+    "last_name": "Котов",
+    "phone_number": "8 (516) 961-2257",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.272Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 7,
+  "fields": {
+    "username": "elizarsuhanov",
+    "first_name": "Ким",
+    "last_name": "Муравьев",
+    "phone_number": "+7 (669) 668-15-41",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.273Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 8,
+  "fields": {
+    "username": "fadeevjanuari",
+    "first_name": "Максимильян",
+    "last_name": "Силин",
+    "phone_number": "80094563639",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.274Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 9,
+  "fields": {
+    "username": "julian2009",
+    "first_name": "Синклитикия",
+    "last_name": "Сидоров",
+    "phone_number": "8 830 980 7490",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.274Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 10,
+  "fields": {
+    "username": "birjukovorest",
+    "first_name": "Григорий",
+    "last_name": "Мишина",
+    "phone_number": "+7 (298) 285-83-41",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.275Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 11,
+  "fields": {
+    "username": "luchezar_1991",
+    "first_name": "Виктор",
+    "last_name": "Игнатьева",
+    "phone_number": "+71007635833",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.275Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 12,
+  "fields": {
+    "username": "hristofor_1988",
+    "first_name": "Амвросий",
+    "last_name": "Артемьев",
+    "phone_number": "8 (246) 881-16-52",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.276Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 13,
+  "fields": {
+    "username": "miron1983",
+    "first_name": "Геннадий",
+    "last_name": "Сысоева",
+    "phone_number": "8 244 653 25 73",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.277Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 14,
+  "fields": {
+    "username": "svjatopolkaksenov",
+    "first_name": "Татьяна",
+    "last_name": "Михеев",
+    "phone_number": "+7 596 088 5008",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.277Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 15,
+  "fields": {
+    "username": "luka37",
+    "first_name": "Маргарита",
+    "last_name": "Воробьев",
+    "phone_number": "+70974313340",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.278Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 16,
+  "fields": {
+    "username": "larisa61",
+    "first_name": "Карп",
+    "last_name": "Герасимова",
+    "phone_number": "8 (462) 942-3698",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.278Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 17,
+  "fields": {
+    "username": "shilovaalla",
+    "first_name": "Сидор",
+    "last_name": "Смирнова",
+    "phone_number": "8 859 090 4650",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.279Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 18,
+  "fields": {
+    "username": "obogdanova",
+    "first_name": "Фрол",
+    "last_name": "Пестов",
+    "phone_number": "8 107 728 2005",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.279Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 19,
+  "fields": {
+    "username": "vladimirartemev",
+    "first_name": "Януарий",
+    "last_name": "Петухов",
+    "phone_number": "+75220911081",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.280Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 20,
+  "fields": {
+    "username": "nikifor79",
+    "first_name": "Наркис",
+    "last_name": "Хохлов",
+    "phone_number": "8 525 481 2588",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.280Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 21,
+  "fields": {
+    "username": "vladislav_1976",
+    "first_name": "Фрол",
+    "last_name": "Уваров",
+    "phone_number": "+7 (106) 650-02-59",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.281Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 22,
+  "fields": {
+    "username": "bespalovlukjan",
+    "first_name": "Нонна",
+    "last_name": "Сафонова",
+    "phone_number": "+7 (559) 937-1281",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.282Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 23,
+  "fields": {
+    "username": "olimpi_2005",
+    "first_name": "Валентин",
+    "last_name": "Киселев",
+    "phone_number": "8 664 553 6323",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.282Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 24,
+  "fields": {
+    "username": "narkis_1998",
+    "first_name": "Синклитикия",
+    "last_name": "Якушев",
+    "phone_number": "+7 403 901 17 48",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.283Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 25,
+  "fields": {
+    "username": "kostinaagafja",
+    "first_name": "Маргарита",
+    "last_name": "Ларионов",
+    "phone_number": "+7 833 744 0635",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.283Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 26,
+  "fields": {
+    "username": "zikovfeofan",
+    "first_name": "Агата",
+    "last_name": "Яковлева",
+    "phone_number": "8 (446) 353-45-84",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.284Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 27,
+  "fields": {
+    "username": "luchezar78",
+    "first_name": "Никандр",
+    "last_name": "Горбачев",
+    "phone_number": "8 (739) 757-1294",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.284Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 28,
+  "fields": {
+    "username": "petrovostromir",
+    "first_name": "Клавдия",
+    "last_name": "Маслова",
+    "phone_number": "+7 (246) 532-9867",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.285Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 29,
+  "fields": {
+    "username": "rvoronova",
+    "first_name": "Исидор",
+    "last_name": "Русакова",
+    "phone_number": "8 893 194 60 54",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.285Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 30,
+  "fields": {
+    "username": "skiseleva",
+    "first_name": "Федор",
+    "last_name": "Шубина",
+    "phone_number": "8 417 278 01 10",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.286Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 31,
+  "fields": {
+    "username": "vkotov",
+    "first_name": "Петр",
+    "last_name": "Крюков",
+    "phone_number": "+7 (776) 716-6226",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.287Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 32,
+  "fields": {
+    "username": "yshilov",
+    "first_name": "Гурий",
+    "last_name": "Панов",
+    "phone_number": "8 960 453 77 43",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.287Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 33,
+  "fields": {
+    "username": "tvorimir_09",
+    "first_name": "Лариса",
+    "last_name": "Горбачев",
+    "phone_number": "+7 (714) 729-75-16",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.288Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 34,
+  "fields": {
+    "username": "fadeevljubim",
+    "first_name": "Марфа",
+    "last_name": "Михайлова",
+    "phone_number": "+7 (614) 095-6729",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.288Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 35,
+  "fields": {
+    "username": "ipatkudrjashov",
+    "first_name": "Жанна",
+    "last_name": "Суворов",
+    "phone_number": "8 073 936 5672",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.289Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 36,
+  "fields": {
+    "username": "fafanaseva",
+    "first_name": "Евграф",
+    "last_name": "Горбачева",
+    "phone_number": "+7 001 623 42 90",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.289Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 37,
+  "fields": {
+    "username": "doroninaristarh",
+    "first_name": "Игнатий",
+    "last_name": "Евдокимов",
+    "phone_number": "8 (553) 246-7241",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.290Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 38,
+  "fields": {
+    "username": "otihonova",
+    "first_name": "Милий",
+    "last_name": "Козлов",
+    "phone_number": "8 121 934 53 77",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.290Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 39,
+  "fields": {
+    "username": "bobrovaelizaveta",
+    "first_name": "Автоном",
+    "last_name": "Дьячкова",
+    "phone_number": "8 (467) 144-5660",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.291Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 40,
+  "fields": {
+    "username": "mark_97",
+    "first_name": "Силантий",
+    "last_name": "Воронцов",
+    "phone_number": "8 (887) 304-7994",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.291Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 41,
+  "fields": {
+    "username": "lev_85",
+    "first_name": "Мечислав",
+    "last_name": "Костин",
+    "phone_number": "+7 (999) 003-38-33",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.292Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 42,
+  "fields": {
+    "username": "zhuravlevafevronija",
+    "first_name": "Леон",
+    "last_name": "Ефимова",
+    "phone_number": "84690445625",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:01.292Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 43,
+  "fields": {
+    "username": "jakov_22",
+    "first_name": "Владимир",
+    "last_name": "Тетерин",
+    "phone_number": "+7 (738) 558-0335",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.293Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 44,
+  "fields": {
+    "username": "david1982",
+    "first_name": "Анна",
+    "last_name": "Матвеева",
+    "phone_number": "8 480 573 5648",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.294Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 45,
+  "fields": {
+    "username": "klimentsilin",
+    "first_name": "Серафим",
+    "last_name": "Журавлева",
+    "phone_number": "+7 (648) 339-1422",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.294Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 46,
+  "fields": {
+    "username": "radislav21",
+    "first_name": "Самсон",
+    "last_name": "Пестов",
+    "phone_number": "8 (728) 617-7692",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.295Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 47,
+  "fields": {
+    "username": "solovevjulian",
+    "first_name": "Иосиф",
+    "last_name": "Виноградова",
+    "phone_number": "8 (826) 941-8181",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:01.295Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 48,
+  "fields": {
+    "username": "pankrati2005",
+    "first_name": "Капитон",
+    "last_name": "Кулаков",
+    "phone_number": "+7 (122) 396-3662",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:01.296Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 49,
+  "fields": {
+    "username": "egrigorev",
+    "first_name": "Исидор",
+    "last_name": "Воронцов",
+    "phone_number": "8 (005) 694-59-00",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.296Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 50,
+  "fields": {
+    "username": "radimvinogradov",
+    "first_name": "Елизар",
+    "last_name": "Комиссарова",
+    "phone_number": "+7 149 711 0837",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:01.297Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 51,
+  "fields": {
+    "username": "miroslavkostin",
+    "first_name": "Олимпий",
+    "last_name": "Копылов",
+    "phone_number": "8 184 970 7755",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.617Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 52,
+  "fields": {
+    "username": "izmailershov",
+    "first_name": "Болеслав",
+    "last_name": "Рожкова",
+    "phone_number": "8 (651) 996-2671",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.634Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 53,
+  "fields": {
+    "username": "nikitinprov",
+    "first_name": "Аполлинарий",
+    "last_name": "Костин",
+    "phone_number": "8 679 739 05 52",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.635Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 54,
+  "fields": {
+    "username": "agge84",
+    "first_name": "Аполлинарий",
+    "last_name": "Пахомов",
+    "phone_number": "+7 812 109 84 50",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.636Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 55,
+  "fields": {
+    "username": "tkapustina",
+    "first_name": "Нонна",
+    "last_name": "Щукин",
+    "phone_number": "+7 762 563 09 01",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.636Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 56,
+  "fields": {
+    "username": "gerasimovgremislav",
+    "first_name": "Марк",
+    "last_name": "Попова",
+    "phone_number": "8 476 485 8526",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.637Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 57,
+  "fields": {
+    "username": "strelkovdobromisl",
+    "first_name": "Григорий",
+    "last_name": "Дементьева",
+    "phone_number": "+7 (471) 568-27-16",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.638Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 58,
+  "fields": {
+    "username": "izmailuvarov",
+    "first_name": "Назар",
+    "last_name": "Куликова",
+    "phone_number": "8 (474) 159-7453",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.638Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 59,
+  "fields": {
+    "username": "safonovaevfrosinija",
+    "first_name": "Силантий",
+    "last_name": "Лаврентьев",
+    "phone_number": "+7 (857) 447-17-64",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.639Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 60,
+  "fields": {
+    "username": "karl_1997",
+    "first_name": "Вячеслав",
+    "last_name": "Комиссарова",
+    "phone_number": "+78849427466",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.640Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 61,
+  "fields": {
+    "username": "ipati70",
+    "first_name": "Виталий",
+    "last_name": "Тихонова",
+    "phone_number": "87919327663",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.640Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 62,
+  "fields": {
+    "username": "vladilen2022",
+    "first_name": "Аким",
+    "last_name": "Белозерова",
+    "phone_number": "+7 (843) 293-00-22",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.641Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 63,
+  "fields": {
+    "username": "emmanuil07",
+    "first_name": "Василиса",
+    "last_name": "Капустин",
+    "phone_number": "+7 891 112 7356",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.641Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 64,
+  "fields": {
+    "username": "bronislav77",
+    "first_name": "Евсей",
+    "last_name": "Горшкова",
+    "phone_number": "87097822010",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.642Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 65,
+  "fields": {
+    "username": "petuhovtit",
+    "first_name": "Феоктист",
+    "last_name": "Гусева",
+    "phone_number": "+7 (817) 081-69-36",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.642Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 66,
+  "fields": {
+    "username": "lukinvalerjan",
+    "first_name": "Радован",
+    "last_name": "Мишин",
+    "phone_number": "8 (757) 135-5336",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.643Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 67,
+  "fields": {
+    "username": "vladlen_54",
+    "first_name": "Олег",
+    "last_name": "Андреева",
+    "phone_number": "+7 025 964 0926",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.643Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 68,
+  "fields": {
+    "username": "georgi1993",
+    "first_name": "Зосима",
+    "last_name": "Ермаков",
+    "phone_number": "8 (257) 913-0683",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.644Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 69,
+  "fields": {
+    "username": "iagafonov",
+    "first_name": "Антонина",
+    "last_name": "Устинова",
+    "phone_number": "+7 193 023 7453",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.645Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 70,
+  "fields": {
+    "username": "innokenti99",
+    "first_name": "Елизар",
+    "last_name": "Блинова",
+    "phone_number": "82568942679",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.645Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 71,
+  "fields": {
+    "username": "grigorevfoti",
+    "first_name": "Бронислав",
+    "last_name": "Абрамова",
+    "phone_number": "+7 (703) 257-75-05",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.646Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 72,
+  "fields": {
+    "username": "adammishin",
+    "first_name": "Клавдий",
+    "last_name": "Громова",
+    "phone_number": "88193461168",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.646Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 73,
+  "fields": {
+    "username": "ivanovamaja",
+    "first_name": "Куприян",
+    "last_name": "Лазарева",
+    "phone_number": "8 (596) 451-2163",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.647Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 74,
+  "fields": {
+    "username": "innokenti_1977",
+    "first_name": "Евгения",
+    "last_name": "Зуев",
+    "phone_number": "+71456358710",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.647Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 75,
+  "fields": {
+    "username": "rusakovasinklitikija",
+    "first_name": "Андрей",
+    "last_name": "Фролов",
+    "phone_number": "+76104015905",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.648Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 76,
+  "fields": {
+    "username": "julian_1977",
+    "first_name": "Макар",
+    "last_name": "Юдин",
+    "phone_number": "+7 (660) 962-56-55",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.648Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 77,
+  "fields": {
+    "username": "kononovairaida",
+    "first_name": "Гурий",
+    "last_name": "Цветкова",
+    "phone_number": "+7 133 721 2903",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.649Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 78,
+  "fields": {
+    "username": "wkulakova",
+    "first_name": "Григорий",
+    "last_name": "Доронина",
+    "phone_number": "8 142 722 0426",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.650Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 79,
+  "fields": {
+    "username": "morozovazinaida",
+    "first_name": "Аполлон",
+    "last_name": "Комарова",
+    "phone_number": "+7 (363) 205-6496",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.650Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 80,
+  "fields": {
+    "username": "seliverst_79",
+    "first_name": "Симон",
+    "last_name": "Кошелев",
+    "phone_number": "8 554 404 87 08",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.651Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 81,
+  "fields": {
+    "username": "evstafi1990",
+    "first_name": "Вера",
+    "last_name": "Маслов",
+    "phone_number": "8 (455) 830-48-82",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.651Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 82,
+  "fields": {
+    "username": "frolovfoka",
+    "first_name": "Ипполит",
+    "last_name": "Дьячков",
+    "phone_number": "8 (070) 903-57-98",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.652Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 83,
+  "fields": {
+    "username": "lukjan1994",
+    "first_name": "Агап",
+    "last_name": "Гуляев",
+    "phone_number": "8 (882) 687-8474",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.652Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 84,
+  "fields": {
+    "username": "galaktion_2014",
+    "first_name": "Назар",
+    "last_name": "Воронова",
+    "phone_number": "8 (906) 780-6242",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.653Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 85,
+  "fields": {
+    "username": "fedot_27",
+    "first_name": "Лонгин",
+    "last_name": "Герасимов",
+    "phone_number": "+70838213790",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.654Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 86,
+  "fields": {
+    "username": "sofron_1978",
+    "first_name": "Любосмысл",
+    "last_name": "Осипова",
+    "phone_number": "+7 407 060 09 07",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.654Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 87,
+  "fields": {
+    "username": "medvedevaanzhela",
+    "first_name": "Евграф",
+    "last_name": "Николаев",
+    "phone_number": "8 (622) 800-71-66",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.655Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 88,
+  "fields": {
+    "username": "elise_78",
+    "first_name": "Варлаам",
+    "last_name": "Лыткина",
+    "phone_number": "8 (249) 698-9002",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.655Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 89,
+  "fields": {
+    "username": "hohlovasofija",
+    "first_name": "Амос",
+    "last_name": "Попов",
+    "phone_number": "+7 996 803 3212",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.656Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 90,
+  "fields": {
+    "username": "adam_1976",
+    "first_name": "Антонина",
+    "last_name": "Воронцов",
+    "phone_number": "87045809000",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.657Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 91,
+  "fields": {
+    "username": "kbespalov",
+    "first_name": "Евграф",
+    "last_name": "Крылова",
+    "phone_number": "+7 (077) 109-47-50",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.657Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 92,
+  "fields": {
+    "username": "hgavrilov",
+    "first_name": "Оксана",
+    "last_name": "Назарова",
+    "phone_number": "+74687378112",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.658Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 93,
+  "fields": {
+    "username": "samuil_2006",
+    "first_name": "Денис",
+    "last_name": "Комаров",
+    "phone_number": "8 (026) 414-9355",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.658Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 94,
+  "fields": {
+    "username": "oktjabrina20",
+    "first_name": "Владислав",
+    "last_name": "Сафонова",
+    "phone_number": "8 016 286 49 12",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.659Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 95,
+  "fields": {
+    "username": "karpovaraisa",
+    "first_name": "Богдан",
+    "last_name": "Коновалов",
+    "phone_number": "8 666 220 6730",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:34:52.659Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 96,
+  "fields": {
+    "username": "evgraf_46",
+    "first_name": "Милован",
+    "last_name": "Русакова",
+    "phone_number": "89479732725",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:34:52.660Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 97,
+  "fields": {
+    "username": "strelkovairaida",
+    "first_name": "Нина",
+    "last_name": "Бобылев",
+    "phone_number": "+7 (657) 370-79-40",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:34:52.660Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 98,
+  "fields": {
+    "username": "samuilkozlov",
+    "first_name": "Харлампий",
+    "last_name": "Миронов",
+    "phone_number": "8 (886) 740-0040",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.661Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 99,
+  "fields": {
+    "username": "molchanovvenedikt",
+    "first_name": "Валентина",
+    "last_name": "Федорова",
+    "phone_number": "+75449967784",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.661Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 100,
+  "fields": {
+    "username": "maksim_98",
+    "first_name": "Иларион",
+    "last_name": "Белоусов",
+    "phone_number": "80781485396",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:34:52.662Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 101,
+  "fields": {
+    "username": "stanimiravdeev",
+    "first_name": "Парамон",
+    "last_name": "Елисеева",
+    "phone_number": "+7 444 381 5208",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.279Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 102,
+  "fields": {
+    "username": "evseevfoka",
+    "first_name": "Дементий",
+    "last_name": "Беляева",
+    "phone_number": "+75356514147",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.280Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 103,
+  "fields": {
+    "username": "rjurik39",
+    "first_name": "Радован",
+    "last_name": "Носова",
+    "phone_number": "8 (309) 891-97-99",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.281Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 104,
+  "fields": {
+    "username": "naina_1992",
+    "first_name": "Пров",
+    "last_name": "Шарапов",
+    "phone_number": "8 (666) 545-9423",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.281Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 105,
+  "fields": {
+    "username": "alevtina66",
+    "first_name": "Мир",
+    "last_name": "Бирюков",
+    "phone_number": "+7 (499) 474-0777",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.282Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 106,
+  "fields": {
+    "username": "vlasovmili",
+    "first_name": "Варлаам",
+    "last_name": "Филатов",
+    "phone_number": "+71279228649",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.282Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 107,
+  "fields": {
+    "username": "jaropolkharitonov",
+    "first_name": "Савва",
+    "last_name": "Субботина",
+    "phone_number": "+7 (057) 141-11-46",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.283Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 108,
+  "fields": {
+    "username": "mili_85",
+    "first_name": "Карл",
+    "last_name": "Панов",
+    "phone_number": "8 422 968 98 16",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.284Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 109,
+  "fields": {
+    "username": "blinovprokofi",
+    "first_name": "Харлампий",
+    "last_name": "Захаров",
+    "phone_number": "8 702 380 68 21",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.284Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 110,
+  "fields": {
+    "username": "egorovanadezhda",
+    "first_name": "Антонина",
+    "last_name": "Степанова",
+    "phone_number": "+7 (356) 354-6807",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.285Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 111,
+  "fields": {
+    "username": "foma_61",
+    "first_name": "Николай",
+    "last_name": "Самсонова",
+    "phone_number": "+7 068 653 10 80",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.285Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 112,
+  "fields": {
+    "username": "teterinvladlen",
+    "first_name": "Яков",
+    "last_name": "Гуляев",
+    "phone_number": "+7 800 050 0378",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.286Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 113,
+  "fields": {
+    "username": "jhohlova",
+    "first_name": "Лучезар",
+    "last_name": "Ковалев",
+    "phone_number": "+7 086 509 62 07",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.287Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 114,
+  "fields": {
+    "username": "darja2020",
+    "first_name": "Алексей",
+    "last_name": "Яковлева",
+    "phone_number": "+7 754 422 01 12",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.287Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 115,
+  "fields": {
+    "username": "oksana1996",
+    "first_name": "Тимур",
+    "last_name": "Мельникова",
+    "phone_number": "+79310794978",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.288Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 116,
+  "fields": {
+    "username": "maslovdobroslav",
+    "first_name": "Ладимир",
+    "last_name": "Гущина",
+    "phone_number": "+7 (149) 307-93-43",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.288Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 117,
+  "fields": {
+    "username": "isidormelnikov",
+    "first_name": "Мина",
+    "last_name": "Носкова",
+    "phone_number": "8 (097) 655-62-02",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.289Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 118,
+  "fields": {
+    "username": "svetlana_1980",
+    "first_name": "Лука",
+    "last_name": "Блинова",
+    "phone_number": "+7 509 234 1879",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.289Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 119,
+  "fields": {
+    "username": "jakovlevandre",
+    "first_name": "Антонин",
+    "last_name": "Субботин",
+    "phone_number": "+74292275540",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.290Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 120,
+  "fields": {
+    "username": "mechislav_1989",
+    "first_name": "Светозар",
+    "last_name": "Трофимов",
+    "phone_number": "8 444 748 7073",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.290Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 121,
+  "fields": {
+    "username": "ilja_1985",
+    "first_name": "Эмилия",
+    "last_name": "Захаров",
+    "phone_number": "+7 (246) 846-4870",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.291Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 122,
+  "fields": {
+    "username": "lukija2003",
+    "first_name": "Вадим",
+    "last_name": "Елисеева",
+    "phone_number": "+7 (391) 486-5376",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.292Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 123,
+  "fields": {
+    "username": "tit_89",
+    "first_name": "Анисим",
+    "last_name": "Смирнов",
+    "phone_number": "+74904493236",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.292Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 124,
+  "fields": {
+    "username": "galaktion92",
+    "first_name": "Пимен",
+    "last_name": "Симонов",
+    "phone_number": "+7 (631) 183-1987",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.293Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 125,
+  "fields": {
+    "username": "prokl77",
+    "first_name": "Ананий",
+    "last_name": "Евсеева",
+    "phone_number": "+7 (278) 030-8174",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.293Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 126,
+  "fields": {
+    "username": "antonovolimpi",
+    "first_name": "Макар",
+    "last_name": "Ширяева",
+    "phone_number": "8 861 740 61 40",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.294Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 127,
+  "fields": {
+    "username": "nazarovaolga",
+    "first_name": "Любосмысл",
+    "last_name": "Бобылев",
+    "phone_number": "+7 516 625 1466",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.294Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 128,
+  "fields": {
+    "username": "dementi2012",
+    "first_name": "Вадим",
+    "last_name": "Журавлев",
+    "phone_number": "+7 (624) 867-45-63",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.295Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 129,
+  "fields": {
+    "username": "porfiri_58",
+    "first_name": "Януарий",
+    "last_name": "Николаев",
+    "phone_number": "8 (889) 649-3903",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.296Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 130,
+  "fields": {
+    "username": "gurevkasjan",
+    "first_name": "Митофан",
+    "last_name": "Воронцов",
+    "phone_number": "+79526080352",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.296Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 131,
+  "fields": {
+    "username": "kulakovosip",
+    "first_name": "Захар",
+    "last_name": "Коновалова",
+    "phone_number": "8 700 008 0310",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.297Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 132,
+  "fields": {
+    "username": "avgustzimin",
+    "first_name": "Дорофей",
+    "last_name": "Гуляева",
+    "phone_number": "+7 785 818 0855",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.297Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 133,
+  "fields": {
+    "username": "pahomtsvetkov",
+    "first_name": "Ким",
+    "last_name": "Гусев",
+    "phone_number": "+7 (899) 479-9282",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.298Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 134,
+  "fields": {
+    "username": "apollinari_1999",
+    "first_name": "Любосмысл",
+    "last_name": "Костина",
+    "phone_number": "+7 (499) 152-0101",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.298Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 135,
+  "fields": {
+    "username": "umedvedev",
+    "first_name": "Панкрат",
+    "last_name": "Силин",
+    "phone_number": "8 784 019 3979",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.299Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 136,
+  "fields": {
+    "username": "olga79",
+    "first_name": "Надежда",
+    "last_name": "Коновалов",
+    "phone_number": "8 (295) 597-4205",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.299Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 137,
+  "fields": {
+    "username": "larisa_90",
+    "first_name": "Агап",
+    "last_name": "Кузьмин",
+    "phone_number": "+7 386 524 3826",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.300Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 138,
+  "fields": {
+    "username": "bolshakovaglafira",
+    "first_name": "Иннокентий",
+    "last_name": "Анисимова",
+    "phone_number": "+7 815 666 5819",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.301Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 139,
+  "fields": {
+    "username": "vatslavrjabov",
+    "first_name": "Софон",
+    "last_name": "Дроздов",
+    "phone_number": "+79601853214",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.301Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 140,
+  "fields": {
+    "username": "alla09",
+    "first_name": "Пров",
+    "last_name": "Дорофеева",
+    "phone_number": "+7 831 698 2728",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.302Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 141,
+  "fields": {
+    "username": "matve32",
+    "first_name": "Мирослав",
+    "last_name": "Савельева",
+    "phone_number": "+7 243 873 16 07",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.302Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 142,
+  "fields": {
+    "username": "globanova",
+    "first_name": "Остромир",
+    "last_name": "Гуляева",
+    "phone_number": "+7 (306) 307-9710",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.303Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 143,
+  "fields": {
+    "username": "pelageja1978",
+    "first_name": "Спиридон",
+    "last_name": "Емельянов",
+    "phone_number": "8 (916) 741-10-87",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.303Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 144,
+  "fields": {
+    "username": "kim2021",
+    "first_name": "Тарас",
+    "last_name": "Шестаков",
+    "phone_number": "8 (320) 546-0865",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.304Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 145,
+  "fields": {
+    "username": "leonti_1986",
+    "first_name": "Феофан",
+    "last_name": "Шашкова",
+    "phone_number": "+7 007 361 3333",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.304Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 146,
+  "fields": {
+    "username": "iraklipavlov",
+    "first_name": "Лариса",
+    "last_name": "Сысоева",
+    "phone_number": "8 143 136 0679",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.305Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 147,
+  "fields": {
+    "username": "narkis61",
+    "first_name": "Ангелина",
+    "last_name": "Гущин",
+    "phone_number": "85076648554",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.306Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 148,
+  "fields": {
+    "username": "petuhovsimon",
+    "first_name": "Рюрик",
+    "last_name": "Меркушева",
+    "phone_number": "+7 295 874 26 00",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.306Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 149,
+  "fields": {
+    "username": "valentina_1974",
+    "first_name": "Венедикт",
+    "last_name": "Крылова",
+    "phone_number": "+7 (534) 741-39-62",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.307Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 150,
+  "fields": {
+    "username": "nina1986",
+    "first_name": "Михей",
+    "last_name": "Суворов",
+    "phone_number": "8 (222) 427-28-15",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.307Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 151,
+  "fields": {
+    "username": "vantonova",
+    "first_name": "Любомир",
+    "last_name": "Казаков",
+    "phone_number": "+73250691758",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.308Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 152,
+  "fields": {
+    "username": "maslovfilipp",
+    "first_name": "Потап",
+    "last_name": "Герасимова",
+    "phone_number": "8 027 854 85 25",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.308Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 153,
+  "fields": {
+    "username": "efrem03",
+    "first_name": "Михаил",
+    "last_name": "Белоусов",
+    "phone_number": "8 223 837 34 67",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.309Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 154,
+  "fields": {
+    "username": "wgordeeva",
+    "first_name": "Зосима",
+    "last_name": "Константинов",
+    "phone_number": "+7 669 026 81 75",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.309Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 155,
+  "fields": {
+    "username": "vorobevazhanna",
+    "first_name": "Матвей",
+    "last_name": "Филиппова",
+    "phone_number": "+7 502 844 29 07",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.310Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 156,
+  "fields": {
+    "username": "parfenrusakov",
+    "first_name": "Аристарх",
+    "last_name": "Орехова",
+    "phone_number": "8 771 457 0930",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.311Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 157,
+  "fields": {
+    "username": "lavrentevseliverst",
+    "first_name": "Моисей",
+    "last_name": "Волкова",
+    "phone_number": "8 (796) 266-61-02",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.311Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 158,
+  "fields": {
+    "username": "nazarovzahar",
+    "first_name": "Федот",
+    "last_name": "Горшков",
+    "phone_number": "89388570999",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.312Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 159,
+  "fields": {
+    "username": "luka67",
+    "first_name": "Ерофей",
+    "last_name": "Дементьев",
+    "phone_number": "8 (763) 461-4749",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.312Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 160,
+  "fields": {
+    "username": "innokenti84",
+    "first_name": "Флорентин",
+    "last_name": "Никитин",
+    "phone_number": "+7 270 889 04 31",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.313Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 161,
+  "fields": {
+    "username": "feliks1995",
+    "first_name": "Мечислав",
+    "last_name": "Рябова",
+    "phone_number": "+78600490854",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.313Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 162,
+  "fields": {
+    "username": "fedoseevprokofi",
+    "first_name": "Платон",
+    "last_name": "Герасимов",
+    "phone_number": "+71847246621",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.314Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 163,
+  "fields": {
+    "username": "panfilkuzmin",
+    "first_name": "Марк",
+    "last_name": "Ларионова",
+    "phone_number": "8 (158) 676-6834",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.314Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 164,
+  "fields": {
+    "username": "raisa_18",
+    "first_name": "Велимир",
+    "last_name": "Осипова",
+    "phone_number": "8 (130) 565-3611",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.315Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 165,
+  "fields": {
+    "username": "braginfilimon",
+    "first_name": "Ладислав",
+    "last_name": "Королева",
+    "phone_number": "+7 (198) 980-7475",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.315Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 166,
+  "fields": {
+    "username": "uvlasov",
+    "first_name": "Никандр",
+    "last_name": "Воробьев",
+    "phone_number": "8 903 500 36 96",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.316Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 167,
+  "fields": {
+    "username": "nikonsimonov",
+    "first_name": "Мартын",
+    "last_name": "Зимина",
+    "phone_number": "84318533996",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.317Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 168,
+  "fields": {
+    "username": "margarita_1992",
+    "first_name": "Поликарп",
+    "last_name": "Терентьева",
+    "phone_number": "85885408760",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.317Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 169,
+  "fields": {
+    "username": "apollon1992",
+    "first_name": "Аникей",
+    "last_name": "Муравьев",
+    "phone_number": "8 (143) 981-0863",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.318Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 170,
+  "fields": {
+    "username": "leonid_2001",
+    "first_name": "Адам",
+    "last_name": "Сафонов",
+    "phone_number": "81772293737",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.318Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 171,
+  "fields": {
+    "username": "kzhuravlev",
+    "first_name": "Владлен",
+    "last_name": "Лазарева",
+    "phone_number": "+7 031 883 80 43",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.319Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 172,
+  "fields": {
+    "username": "innokenti_85",
+    "first_name": "Сильвестр",
+    "last_name": "Дьячков",
+    "phone_number": "8 (125) 907-59-95",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.319Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 173,
+  "fields": {
+    "username": "kirillovatatjana",
+    "first_name": "Ананий",
+    "last_name": "Емельянов",
+    "phone_number": "8 267 207 7149",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.320Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 174,
+  "fields": {
+    "username": "kuznetsovdavid",
+    "first_name": "Елисей",
+    "last_name": "Трофимов",
+    "phone_number": "8 657 576 8146",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.321Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 175,
+  "fields": {
+    "username": "natalja_2021",
+    "first_name": "Бронислав",
+    "last_name": "Елисеев",
+    "phone_number": "8 303 160 14 92",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.321Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 176,
+  "fields": {
+    "username": "jakushevaksenija",
+    "first_name": "Всеволод",
+    "last_name": "Чернова",
+    "phone_number": "+7 (649) 805-20-55",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.322Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 177,
+  "fields": {
+    "username": "prokl2002",
+    "first_name": "Ярослав",
+    "last_name": "Стрелкова",
+    "phone_number": "8 (068) 622-5198",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.322Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 178,
+  "fields": {
+    "username": "makarovilarion",
+    "first_name": "Ферапонт",
+    "last_name": "Макаров",
+    "phone_number": "8 293 863 88 06",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.323Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 179,
+  "fields": {
+    "username": "lavrenti23",
+    "first_name": "Арсений",
+    "last_name": "Михеева",
+    "phone_number": "+7 781 297 3572",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.323Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 180,
+  "fields": {
+    "username": "ermilustinov",
+    "first_name": "Порфирий",
+    "last_name": "Михайлова",
+    "phone_number": "+7 (957) 857-26-28",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.324Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 181,
+  "fields": {
+    "username": "martjan_1977",
+    "first_name": "Галина",
+    "last_name": "Щербаков",
+    "phone_number": "+7 (149) 211-6051",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.325Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 182,
+  "fields": {
+    "username": "veniamingorbachev",
+    "first_name": "Богдан",
+    "last_name": "Анисимов",
+    "phone_number": "8 581 471 48 70",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.325Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 183,
+  "fields": {
+    "username": "ninel94",
+    "first_name": "Радован",
+    "last_name": "Щукина",
+    "phone_number": "+7 672 733 2423",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.326Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 184,
+  "fields": {
+    "username": "arhipovapraskovja",
+    "first_name": "Софон",
+    "last_name": "Громов",
+    "phone_number": "8 (792) 293-07-21",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.326Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 185,
+  "fields": {
+    "username": "orehovgedeon",
+    "first_name": "Станислав",
+    "last_name": "Зиновьев",
+    "phone_number": "8 073 914 4537",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.327Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 186,
+  "fields": {
+    "username": "tihonovmitofan",
+    "first_name": "Дарья",
+    "last_name": "Шубина",
+    "phone_number": "+7 (028) 599-2843",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.327Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 187,
+  "fields": {
+    "username": "sigizmund_1984",
+    "first_name": "Андрон",
+    "last_name": "Борисов",
+    "phone_number": "86243006868",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.328Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 188,
+  "fields": {
+    "username": "ratibor62",
+    "first_name": "Зосима",
+    "last_name": "Дмитриева",
+    "phone_number": "+7 (366) 992-9440",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.328Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 189,
+  "fields": {
+    "username": "seliverstovafevronija",
+    "first_name": "Фадей",
+    "last_name": "Гурьева",
+    "phone_number": "8 735 133 9368",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.329Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 190,
+  "fields": {
+    "username": "arhipovanina",
+    "first_name": "Денис",
+    "last_name": "Филатов",
+    "phone_number": "8 093 353 8637",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.329Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 191,
+  "fields": {
+    "username": "firs60",
+    "first_name": "Милован",
+    "last_name": "Федоров",
+    "phone_number": "83147276890",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.330Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 192,
+  "fields": {
+    "username": "radimbolshakov",
+    "first_name": "Артем",
+    "last_name": "Александрова",
+    "phone_number": "87721365671",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.331Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 193,
+  "fields": {
+    "username": "nikodim74",
+    "first_name": "Евсей",
+    "last_name": "Самсонова",
+    "phone_number": "+7 502 714 6279",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.331Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 194,
+  "fields": {
+    "username": "evgrafsimonov",
+    "first_name": "Севастьян",
+    "last_name": "Федосеева",
+    "phone_number": "+7 274 440 66 07",
+    "current_club": 1,
+    "date_of_register": "2022-07-29T16:35:30.332Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 195,
+  "fields": {
+    "username": "kapustinaagata",
+    "first_name": "Дорофей",
+    "last_name": "Бобылева",
+    "phone_number": "8 586 851 9220",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.332Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 196,
+  "fields": {
+    "username": "braginaregina",
+    "first_name": "Лукия",
+    "last_name": "Сидоров",
+    "phone_number": "8 (872) 029-7451",
+    "current_club": 3,
+    "date_of_register": "2022-07-29T16:35:30.333Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 197,
+  "fields": {
+    "username": "morozovsigizmund",
+    "first_name": "Лора",
+    "last_name": "Самсонов",
+    "phone_number": "+7 799 111 4699",
+    "current_club": 2,
+    "date_of_register": "2022-07-29T16:35:30.333Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 198,
+  "fields": {
+    "username": "ignati61",
+    "first_name": "Серафим",
+    "last_name": "Кудрявцев",
+    "phone_number": "+74849669818",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.334Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 199,
+  "fields": {
+    "username": "pahom1998",
+    "first_name": "Надежда",
+    "last_name": "Панфилов",
+    "phone_number": "8 (227) 592-98-52",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.334Z"
+  }
+},
+{
+  "model": "clientbase.fullinfouser",
+  "pk": 200,
+  "fields": {
+    "username": "ksenija_1979",
+    "first_name": "Назар",
+    "last_name": "Галкина",
+    "phone_number": "8 (721) 370-81-73",
+    "current_club": 4,
+    "date_of_register": "2022-07-29T16:35:30.335Z"
+  }
+}
+]

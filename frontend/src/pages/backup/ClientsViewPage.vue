@@ -21,16 +21,12 @@
           <td>{{ user.last_name }}</td>
         </tr>
         <tr class="bg-gray-800 hover:bg-gray-600">
-          <th>Телефон</th>
-          <td>{{ user.phone_number }}</td>
+          <th>Email</th>
+          <td>{{ user.email }}</td>
         </tr>
         <tr class="bg-gray-800 hover:bg-gray-600">
           <th>Клуб</th>
           <td>{{ user.current_club_name }}</td>
-        </tr>
-        <tr class="bg-gray-800 hover:bg-gray-600">
-          <th>Дата регистрации</th>
-          <td>{{ user.date_of_register }}</td>
         </tr>
         </tbody>
       </v-table>
@@ -44,7 +40,7 @@ import SidebarItem from '../components/sidebar/SidebarItem.vue'
 
 import VTable from '../components/VTable.vue'
 
-import { ClientbaseAPI } from '../api/clientbaseAPI/index.js'
+import { AccountsAPI } from '../api/accountsAPI/index.js'
 
 export default {
   name: 'ClientsViewPage',
@@ -55,14 +51,19 @@ export default {
   },
   data() {
     return {
-      user: Object
+      user: {
+        id: Number,
+        username: String,
+        first_name: String,
+        last_name: String,
+        email: String,
+        current_club_name: String
+      }
     }
   },
   methods: {
-    getClient() {
-      const clientId = this.$route.params.userId
-
-      ClientbaseAPI.getClient(clientId)
+    getUser() {
+      AccountsAPI.getUser(this.$route.params.userId)
         .then(response => {
           console.log(response.data)
           this.user = response.data})
@@ -71,7 +72,7 @@ export default {
     }
   },
   created() {
-    this.getClient()
+    this.getUser()
   }
 }
 </script>

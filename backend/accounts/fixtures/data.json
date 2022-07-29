@@ -1,0 +1,46 @@
+[
+{
+  "model": "accounts.club",
+  "pk": 1,
+  "fields": {
+    "id_name": "goodgame5",
+    "city": "Набережные Челны",
+    "street": "Проспект Мира",
+    "site_link": "https://chelnygg.ru/",
+    "bot_link": "https://t.me/GoodGameChelnyBot"
+  }
+},
+{
+  "model": "accounts.club",
+  "pk": 2,
+  "fields": {
+    "id_name": "goodgame4",
+    "city": "Казань",
+    "street": "Волгоградская",
+    "site_link": "https://mosgg.ru/",
+    "bot_link": "https://t.me/GoodGameVOLGBot"
+  }
+},
+{
+  "model": "accounts.club",
+  "pk": 3,
+  "fields": {
+    "id_name": "goodgame9",
+    "city": "Казань",
+    "street": "Ильгама Шакирова",
+    "site_link": "https://salavatgg.ru/",
+    "bot_link": "https://t.me/GoodGameSalBot"
+  }
+},
+{
+  "model": "accounts.club",
+  "pk": 4,
+  "fields": {
+    "id_name": "goodgame14",
+    "city": "Краснодар",
+    "street": "Атарбекова",
+    "site_link": "https://krasgg.ru/",
+    "bot_link": "https://t.me/GodjiGameKrasBot"
+  }
+}
+]

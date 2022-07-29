@@ -21,9 +21,8 @@
             <th>Username</th>
             <th>Имя</th>
             <th>Фамилия</th>
-            <th>Номер телефона</th>
+            <th>Email</th>
             <th>Клуб</th>
-            <th>Дата регистрации</th>
             <th></th>
           </tr>
         </thead>
@@ -32,9 +31,8 @@
             <th>{{ user.username }}</th>
             <td>{{ user.first_name }}</td>
             <td>{{ user.last_name }}</td>
-            <td>{{ user.phone_number }}</td>
+            <td>{{ user.email }}</td>
             <td>{{ user.current_club_name }}</td>
-            <td>{{ user.date_of_register }}</td>
             <td class="text-right">
               <router-link :to="{name: 'ClientsView', params: {userId: user.id}}">
                 <span class="font-medium text-purple-400 hover:underline">Открыть</span>
@@ -53,10 +51,10 @@ import SidebarItem from '../components/sidebar/SidebarItem.vue'
 
 import VTable from '../components/VTable.vue'
 
-import { ClientbaseAPI } from '../api/clientbaseAPI/index.js'
+import { AccountsAPI } from '../api/accountsAPI/index.js'
 
 export default {
-  name: 'ClientsPage',
+  name: 'MainPage',
   data() {
     return {
       usersList: [
@@ -65,9 +63,8 @@ export default {
           username: String,
           first_name: String,
           last_name: String,
-          phone_number: String,
-          current_club_name: String,
-          date_of_register: Date
+          email: String,
+          current_club_name: String
         }
       ]
     }
@@ -78,8 +75,8 @@ export default {
     SidebarItem
   },
   methods: {
-    loadClients() {
-      ClientbaseAPI.loadClients()
+    loadUsers() {
+      AccountsAPI.loadUsers()
         .then(response => {
           console.log(response.data)
           this.usersList = response.data})
@@ -88,7 +85,7 @@ export default {
     }
   },
   created() {
-    this.loadClients()
+    this.loadUsers()
   }
 }
 </script>
