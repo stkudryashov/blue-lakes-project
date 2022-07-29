@@ -1,14 +1,14 @@
-from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.viewsets import ModelViewSet
 
 from .models import User
 from .serializers import UserSerializer
 
 
-class UserViewSet(viewsets.ModelViewSet):
+class UserViewSet(ModelViewSet):
     """Создание и получение пользователей CRM"""
 
     queryset = User.objects.all()
