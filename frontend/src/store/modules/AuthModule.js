@@ -1,7 +1,7 @@
-import { AuthAPI } from '../../api/accountsAPI/index.js'
-import { defaultRequest } from '../../api/config.js'
+import {AuthAPI} from '../../api/accountsAPI/index.js'
+import {defaultRequest} from '../../api/config.js'
 
-import store from  '../index.js'
+import store from '../index.js'
 
 export const AuthModule = {
   namespaced: true,
@@ -9,6 +9,7 @@ export const AuthModule = {
     return {
       credentials: {
         token: localStorage.getItem('token') || null,
+        permissions: Array
       },
       user: Object
     }
@@ -16,6 +17,9 @@ export const AuthModule = {
   getters: {
     getUserInfo(state) {
       return state.user
+    },
+    getUserPermissions(state) {
+      return state.credentials.permissions
     }
   },
   mutations: {
@@ -29,6 +33,7 @@ export const AuthModule = {
     },
     setUser(state, data) {
       state.user = data
+      state.credentials.permissions = data.type.permissions.map(x => x.permission)
     }
   },
   actions: {

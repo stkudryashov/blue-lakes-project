@@ -8,18 +8,28 @@ from .models import User, UserType, UserPermission, Club
 
 @admin.register(UserPermission)
 class UserPermissionAdmin(admin.ModelAdmin):
+    """
+    Права для аккаунтов
+    """
+
     list_display = ('title', 'permission')
 
 
 @admin.register(UserType)
 class UserTypeAdmin(admin.ModelAdmin):
+    """
+    Типы аккаунтов с правами доступа
+    """
+
     list_display = ('title',)
     filter_horizontal = ('permissions',)
 
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
-    """Панель управления пользователями"""
+    """
+    Панель управления пользователями
+    """
 
     model = User
 
@@ -46,6 +56,10 @@ admin.site.unregister(Group)
 
 @admin.register(Club)
 class ClubAdmin(admin.ModelAdmin):
+    """
+    Создание и редактирование клубов
+    """
+
     list_display = ('id_name', 'city', 'street')
 
     fieldsets = (

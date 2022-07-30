@@ -4,7 +4,9 @@ from django.contrib.auth.models import AbstractUser
 
 
 class Club(models.Model):
-    """Модель игрового клуба"""
+    """
+    Модель игрового клуба
+    """
 
     id_name = models.CharField(max_length=32, verbose_name='Идентификатор')
 
@@ -23,6 +25,10 @@ class Club(models.Model):
 
 
 class UserPermission(models.Model):
+    """
+    Модель прав доступа для аккаунтов
+    """
+
     permission = models.CharField(max_length=32, verbose_name='Идентификатор')
     title = models.CharField(max_length=32, verbose_name='Название')
 
@@ -30,11 +36,15 @@ class UserPermission(models.Model):
         return f'{self.title}'
 
     class Meta:
-        verbose_name = 'Право пользователя'
-        verbose_name_plural = 'Права пользователей'
+        verbose_name = 'Право доступа'
+        verbose_name_plural = 'Права доступа'
 
 
 class UserType(models.Model):
+    """
+    Модель групп пользователей с правами
+    """
+
     title = models.CharField(max_length=32, verbose_name='Название группы')
     permissions = models.ManyToManyField(UserPermission, verbose_name='Права группы')
 
@@ -47,10 +57,15 @@ class UserType(models.Model):
 
 
 class User(AbstractUser):
-    """Модель пользователя CRM системы"""
+    """
+    Модель пользователя CRM системы
+    """
 
-    current_club = models.ForeignKey(Club, on_delete=models.PROTECT, related_name='users', verbose_name='Текущий клуб')
-    type = models.ForeignKey(UserType, on_delete=models.PROTECT, related_name='users', verbose_name='Группа', null=True)
+    current_club = models.ForeignKey(Club, on_delete=models.PROTECT, related_name='users',
+                                     verbose_name='Текущий клуб', null=True)  # null=True только через админ панель
+
+    type = models.ForeignKey(UserType, on_delete=models.PROTECT, related_name='users',
+                             verbose_name='Группа', null=True)  # null=True только через админ панель
 
     def __str__(self):
         return f'{self.username}'

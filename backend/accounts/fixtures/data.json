@@ -42,5 +42,50 @@
     "site_link": "https://krasgg.ru/",
     "bot_link": "https://t.me/GodjiGameKrasBot"
   }
+},
+{
+  "model": "accounts.userpermission",
+  "pk": 1,
+  "fields": {
+    "permission": "can_change_club",
+    "title": "Смена клубов"
+  }
+},
+{
+  "model": "accounts.userpermission",
+  "pk": 2,
+  "fields": {
+    "permission": "statistics",
+    "title": "Статистики"
+  }
+},
+{
+  "model": "accounts.userpermission",
+  "pk": 3,
+  "fields": {
+    "permission": "finances",
+    "title": "Финансовая таблица"
+  }
+},
+{
+  "model": "accounts.userpermission",
+  "pk": 4,
+  "fields": {
+    "permission": "marketing",
+    "title": "Маркетинг"
+  }
+},
+{
+  "model": "accounts.usertype",
+  "pk": 1,
+  "fields": {
+    "title": "Разработчик",
+    "permissions": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
 }
 ]
