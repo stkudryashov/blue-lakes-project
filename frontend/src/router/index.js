@@ -9,6 +9,8 @@ import ClientsViewPage from '../pages/ClientsViewPage.vue'
 
 import PersonalPage from '../pages/PersonalPage.vue'
 
+import PageNotFound from '../pages/PageNotFound.vue'
+
 const routes = [
   {
     path: '/',
@@ -30,6 +32,11 @@ const routes = [
     name: 'Login',
     meta: { layout: 'empty-layout' },
     component: LoginPage,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'PageNotFound',
+    component: PageNotFound,
   },
 ]
 
