@@ -5,11 +5,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
-axios.defaults.baseURL = 'http://localhost:8000/api'
-axios.defaults.headers.post['Content-Type'] = 'application/json'
-
 import DefaultLayout from "./layouts/DefaultLayout.vue";
 import EmptyLayout from "./layouts/EmptyLayout.vue";
 
