@@ -30,13 +30,13 @@
               <a :href="club.site_link" target="_blank">{{ `${club.city}, ${club.street}` }}</a>
             </td>
             <td>
-              <svg v-if="club.status === 'ok'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg v-if="club.status === 'loaded'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <svg v-else-if="club.status === 'error'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
             </td>
@@ -65,7 +65,7 @@ export default {
   },
   data() {
     return {
-      clubsList: Array
+      clubsList: []
     }
   },
   methods: {
@@ -85,10 +85,10 @@ export default {
         AccountsAPI.loadClubStatus(link)
           .then(response => {
             console.log(response.data)
-            const club = this.clubsList.find(club => club.site_link === link)
+            const club = Array.from(this.clubsList).find(club => club.site_link === link)
 
             if (response.data.status === 200) {
-              club.status = 'ok'
+              club.status = 'loaded'
             }
             else {
               club.status = 'error'

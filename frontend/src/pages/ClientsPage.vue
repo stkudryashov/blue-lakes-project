@@ -66,7 +66,7 @@ export default {
         last_name: '',
         phone_number: '',
         club_name: '',
-        date_of_register: Date
+        date_of_register: '',
       }]
     }
   },

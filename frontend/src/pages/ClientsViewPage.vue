@@ -57,13 +57,13 @@ export default {
   data() {
     return {
       user: {
-        id: Number,
+        id: '',
         username: '',
         first_name: '',
         last_name: '',
         phone_number: '',
         club_name: '',
-        date_of_register: Date
+        date_of_register: '',
       }
     }
   },
