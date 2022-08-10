@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin
 
-from .models import User, UserType, UserPermission, Club
+from accounts.models import User, UserType, UserPermission, Club
 
 
 @admin.register(UserPermission)

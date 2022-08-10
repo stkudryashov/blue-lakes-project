@@ -1,9 +1,8 @@
-from django.urls import path
 from rest_framework import routers
 
-from .views import FullInfoUserViewSet
+from clientbase.views import ClientInfoReadOnlyView
 
 router = routers.DefaultRouter()
-router.register(r'clients', FullInfoUserViewSet, basename='clients')
+router.register(r'clients', ClientInfoReadOnlyView, basename='clients')
 
 urlpatterns = router.urls

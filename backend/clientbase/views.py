@@ -1,14 +1,16 @@
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.permissions import IsAuthenticated
 
-from .models import FullInfoUser
-from .serializers import FullInfoUserSerializer
+from clientbase.models import ClientInfo
+from clientbase.serializers import ClientInfoSerializer
 
 
-class FullInfoUserViewSet(ReadOnlyModelViewSet):
-    """Создание и получение пользователей CRM"""
+class ClientInfoReadOnlyView(ReadOnlyModelViewSet):
+    """
+    Получение информации о клиентах
+    """
 
     permission_classes = [IsAuthenticated]
 
-    queryset = FullInfoUser.objects.all()
-    serializer_class = FullInfoUserSerializer
+    queryset = ClientInfo.objects.all()
+    serializer_class = ClientInfoSerializer

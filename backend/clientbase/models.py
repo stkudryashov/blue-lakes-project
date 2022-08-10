@@ -3,7 +3,7 @@ from django.db import models
 from accounts.models import Club
 
 
-class FullInfoUser(models.Model):
+class ClientInfo(models.Model):
     username = models.CharField(max_length=32, verbose_name='Клиент')
 
     first_name = models.CharField(max_length=32, verbose_name='Имя')

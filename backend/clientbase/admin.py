@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import FullInfoUser
+from clientbase.models import ClientInfo
 
 
-@admin.register(FullInfoUser)
-class ClubAdmin(admin.ModelAdmin):
+@admin.register(ClientInfo)
+class ClientInfoAdmin(admin.ModelAdmin):
     list_display = ('username', 'first_name', 'phone_number', 'current_club')
 
     fieldsets = (

@@ -5,19 +5,23 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 
-from .models import User, Club
-from .serializers import UserSerializer, ClubSerializer
+from accounts.models import User, Club
+from accounts.serializers import UserSerializer, ClubSerializer
 
 
 class UserViewSet(ModelViewSet):
-    """Создание и получение пользователей CRM"""
+    """
+    Создание и получение пользователей CRM
+    """
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 
 class TokenVerifyView(APIView):
-    """Получение данных пользователя по JWT Token"""
+    """
+    Получение данных пользователя по JWT Token
+    """
 
     permission_classes = [IsAuthenticated]
 
@@ -27,13 +31,19 @@ class TokenVerifyView(APIView):
 
 
 class ClubViewSet(ModelViewSet):
-    """Создание и получение объектов клуба"""
+    """
+    Создание и получение объектов клуба
+    """
 
     queryset = Club.objects.all()
     serializer_class = ClubSerializer
 
 
 class ClubStatusView(APIView):
+    """
+    Проверка доступности сайта клуба
+    """
+
     permission_classes = [IsAuthenticated]
 
     def post(self, request):

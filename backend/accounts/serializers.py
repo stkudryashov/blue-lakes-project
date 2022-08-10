@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import User, UserType, UserPermission, Club
+from accounts.models import User, UserType, UserPermission, Club
 
 
 class ClubSerializer(serializers.ModelSerializer):
