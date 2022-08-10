@@ -8,8 +8,8 @@ import ClientsPage from '../pages/ClientsPage.vue'
 import ClientsViewPage from '../pages/ClientsViewPage.vue'
 
 import PersonalPage from '../pages/PersonalPage.vue'
-
 import PageNotFound from '../pages/PageNotFound.vue'
+
 
 const routes = [
   {

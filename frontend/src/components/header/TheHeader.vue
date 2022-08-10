@@ -53,10 +53,7 @@
           </router-link>
 
           <!-- Club -->
-          <TheHeaderItemDropdown
-              :current_club="user.current_club.street"
-              v-if="permissions.includes('can_change_club')"
-          >
+          <TheHeaderItemDropdown :current_club="club.street" v-if="permissions.includes('can_change_club')">
             <TheHeaderItemDropdownLink title="Академика Глушко" />
             <TheHeaderItemDropdownLink title="Хусаина Мавлютовао" />
             <TheHeaderItemDropdownLink title="Набережные Челны" />
@@ -73,6 +70,7 @@ import TheHeaderItem from './TheHeaderItem.vue';
 import TheHeaderItemDropdown from './TheHeaderItemDropdown.vue';
 import TheHeaderItemDropdownLink from './TheHeaderItemDropdownLink.vue';
 
+
 export default {
   name: 'TheHeader',
   components: {
@@ -84,8 +82,11 @@ export default {
     user() {
       return this.$store.getters['AuthModule/getUserInfo']
     },
+    club() {
+      return this.$store.getters['AuthModule/getUserClub']
+    },
     permissions() {
-      return this.$store.getters['AuthModule/getUserPermissions']
+      return Array.from(this.$store.getters['AuthModule/getUserPermissions'])
     }
   },
 }

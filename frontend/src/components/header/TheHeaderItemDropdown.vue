@@ -19,6 +19,7 @@
 <script>
 import TheHeaderItem from './TheHeaderItem.vue'
 
+
 export default {
   name: 'TheHeaderItemDropdown',
   components: {

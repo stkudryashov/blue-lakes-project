@@ -40,7 +40,7 @@ import SidebarItem from '../components/sidebar/SidebarItem.vue'
 
 import VTable from '../components/VTable.vue'
 
-import { AccountsAPI } from '../api/accountsAPI/index.js'
+import { AccountsAPI } from '../api/accounts/index.js'
 
 export default {
   name: 'ClientsViewPage',

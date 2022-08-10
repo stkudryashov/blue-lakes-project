@@ -26,7 +26,7 @@
         </tr>
         <tr class="bg-gray-800 hover:bg-gray-600">
           <th>Клуб</th>
-          <td>{{ user.current_club_name }}</td>
+          <td>{{ user.club_name }}</td>
         </tr>
         <tr class="bg-gray-800 hover:bg-gray-600">
           <th>Дата регистрации</th>
@@ -44,7 +44,8 @@ import SidebarItem from '../components/sidebar/SidebarItem.vue'
 
 import VTable from '../components/VTable.vue'
 
-import { ClientbaseAPI } from '../api/clientbaseAPI/index.js'
+import { ClientbaseAPI } from '../api/clientbase/index.js'
+
 
 export default {
   name: 'ClientsViewPage',
@@ -55,7 +56,15 @@ export default {
   },
   data() {
     return {
-      user: Object
+      user: {
+        id: Number,
+        username: '',
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        club_name: '',
+        date_of_register: Date
+      }
     }
   },
   methods: {

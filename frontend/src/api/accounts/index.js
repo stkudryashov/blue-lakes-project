@@ -1,5 +1,6 @@
 import { loginRequest, defaultRequest } from '../config.js'
 
+
 export const AuthAPI = {
   login(username, password) {
     const url = '/accounts/login/'

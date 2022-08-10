@@ -1,5 +1,6 @@
 import { defaultRequest } from '../config.js'
 
+
 export const ClientbaseAPI = {
   loadClients() {
     const url = '/clientbase/clients/'

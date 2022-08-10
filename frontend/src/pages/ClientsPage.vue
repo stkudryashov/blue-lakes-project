@@ -33,7 +33,7 @@
             <td>{{ user.first_name }}</td>
             <td>{{ user.last_name }}</td>
             <td>{{ user.phone_number }}</td>
-            <td>{{ user.current_club_name }}</td>
+            <td>{{ user.club_name }}</td>
             <td>{{ user.date_of_register }}</td>
             <td class="text-right">
               <router-link :to="{name: 'ClientsView', params: {userId: user.id}}">
@@ -53,13 +53,21 @@ import SidebarItem from '../components/sidebar/SidebarItem.vue'
 
 import VTable from '../components/VTable.vue'
 
-import { ClientbaseAPI } from '../api/clientbaseAPI/index.js'
+import { ClientbaseAPI } from '../api/clientbase/index.js'
 
 export default {
   name: 'ClientsPage',
   data() {
     return {
-      usersList: Array
+      usersList: [{
+        id: Number,
+        username: '',
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        club_name: '',
+        date_of_register: Date
+      }]
     }
   },
   components: {

@@ -12,6 +12,7 @@
 <script>
 import TheHeader from '../components/header/TheHeader.vue'
 
+
 export default {
   name: 'MainLayout',
   components: {

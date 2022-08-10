@@ -1,7 +1,8 @@
-import {AuthAPI} from '../../api/accountsAPI/index.js'
+import {AuthAPI} from '../../api/accounts/index.js'
 import {defaultRequest} from '../../api/config.js'
 
 import store from '../index.js'
+
 
 export const AuthModule = {
   namespaced: true,
@@ -9,14 +10,31 @@ export const AuthModule = {
     return {
       credentials: {
         token: localStorage.getItem('token') || null,
-        permissions: Array
+        permissions: Array,
+        type: '',
       },
-      user: Object
+      user: {
+        id: Number,
+        username: '',
+        first_name: '',
+        last_name: '',
+        email: '',
+      },
+      current_club: {
+        id_name: '',
+        city: '',
+        street: '',
+        site_link: '',
+        bot_link: '',
+      },
     }
   },
   getters: {
     getUserInfo(state) {
       return state.user
+    },
+    getUserClub(state) {
+      return state.current_club
     },
     getUserPermissions(state) {
       return state.credentials.permissions
@@ -32,7 +50,14 @@ export const AuthModule = {
       localStorage.removeItem('token')
     },
     setUser(state, data) {
-      state.user = data
+      state.user.id = data.id
+      state.user.username = data.username
+      state.user.first_name = data.first_name
+      state.user.last_name = data.last_name
+      state.user.email = data.email
+
+      state.current_club = data.current_club
+      state.credentials.type = data.type.title
       state.credentials.permissions = data.type.permissions.map(x => x.permission)
     }
   },

@@ -11,8 +11,7 @@ class ClientInfo(models.Model):
 
     phone_number = models.CharField(max_length=16, verbose_name='Номер телефона')
 
-    current_club = models.ForeignKey(Club, on_delete=models.PROTECT,
-                                     related_name='clients', verbose_name='Текущий клуб')
+    club = models.ForeignKey(Club, on_delete=models.PROTECT, related_name='clients', verbose_name='Клуб клиента')
 
     date_of_register = models.DateTimeField(auto_now_add=True, verbose_name='Дата регистрации')
 
