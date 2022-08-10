@@ -48,12 +48,13 @@
 </template>
 
 <script>
-import Sidebar from '../components/sidebar/Sidebar.vue'
-import SidebarItem from '../components/sidebar/SidebarItem.vue'
+import Sidebar from '../../components/sidebar/Sidebar.vue'
+import SidebarItem from '../../components/sidebar/SidebarItem.vue'
 
-import VTable from '../components/VTable.vue'
+import VTable from '../../components/VTable.vue'
 
-import { ClientbaseAPI } from '../api/clientbase/index.js'
+import { ClientbaseAPI } from '../../api/clientbase/index.js'
+
 
 export default {
   name: 'ClientsPage',

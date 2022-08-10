@@ -11,7 +11,6 @@ export const AuthModule = {
       credentials: {
         token: localStorage.getItem('token') || null,
         permissions: Array,
-        type: '',
       },
       user: {
         id: Number,
@@ -19,6 +18,8 @@ export const AuthModule = {
         first_name: '',
         last_name: '',
         email: '',
+        type: '',
+        permissions: Array,
       },
       current_club: {
         id_name: '',
@@ -51,13 +52,16 @@ export const AuthModule = {
     },
     setUser(state, data) {
       state.user.id = data.id
+
       state.user.username = data.username
       state.user.first_name = data.first_name
       state.user.last_name = data.last_name
       state.user.email = data.email
 
+      state.user.type = data.type.title
+      state.user.permissions = data.type.permissions
+
       state.current_club = data.current_club
-      state.credentials.type = data.type.title
       state.credentials.permissions = data.type.permissions.map(x => x.permission)
     }
   },

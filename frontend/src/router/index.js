@@ -4,16 +4,16 @@ import store from '../store/index.js'
 
 import LoginPage from '../pages/LoginPage.vue'
 
-import ClientsPage from '../pages/ClientsPage.vue'
-import ClientsViewPage from '../pages/ClientsViewPage.vue'
+import ClientsPage from '../pages/clients/ClientsPage.vue'
+import ClientsViewPage from '../pages/clients/ClientsViewPage.vue'
 
-import PersonalPage from '../pages/PersonalPage.vue'
+import PersonalPage from '../pages/personal/PersonalPage.vue'
 import PageNotFound from '../pages/PageNotFound.vue'
 
 
 const routes = [
   {
-    path: '/',
+    path: '/clients',
     name: 'Clients',
     component: ClientsPage,
   },
