@@ -76,6 +76,14 @@
   }
 },
 {
+  "model": "accounts.userpermission",
+  "pk": 5,
+  "fields": {
+    "permission": "servers_status",
+    "title": "Статус серверов"
+  }
+},
+{
   "model": "accounts.usertype",
   "pk": 1,
   "fields": {

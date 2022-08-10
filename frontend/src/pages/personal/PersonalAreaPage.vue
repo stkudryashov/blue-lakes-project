@@ -1,4 +1,5 @@
 <template>
+  <!-- Карточка пользователя CRM -->
   <div class="flex">
     <div class="m-3 flex-1">
       <v-table>
@@ -28,6 +29,7 @@
       </v-table>
     </div>
 
+    <!-- Список прав доступа -->
     <div class="m-3 flex-1">
       <v-table>
         <thead>
