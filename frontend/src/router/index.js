@@ -3,12 +3,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store/index.js'
 
 import LoginPage from '../pages/LoginPage.vue'
+import PageNotFound from '../pages/PageNotFound.vue'
 
 import ClientsPage from '../pages/clients/ClientsPage.vue'
-import ClientsViewPage from '../pages/clients/ClientsViewPage.vue'
+import ClientsPageDetail from '../pages/clients/ClientsPageDetail.vue'
 
 import PersonalPage from '../pages/personal/PersonalPage.vue'
-import PageNotFound from '../pages/PageNotFound.vue'
+import PersonalPageArea from '../pages/personal/PersonalPageArea.vue'
+import PersonalPageServers from '../pages/personal/PersonalPageServers.vue'
 
 
 const routes = [
@@ -20,12 +22,24 @@ const routes = [
   {
     path: '/clients/:userId',
     name: 'ClientsView',
-    component: ClientsViewPage,
+    component: ClientsPageDetail,
   },
   {
     path: '/personal',
     name: 'Personal',
     component: PersonalPage,
+    children: [
+      {
+        path: 'profile',
+        name: 'Profile',
+        component: PersonalPageArea,
+      },
+      {
+        path: 'servers',
+        name: 'Servers',
+        component: PersonalPageServers,
+      }
+    ]
   },
   {
     path: '/login',

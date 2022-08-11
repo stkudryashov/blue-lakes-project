@@ -52,7 +52,7 @@ import VTable from '../../components/VTable.vue'
 
 
 export default {
-  name: 'PersonalAreaPage',
+  name: 'PersonalPageArea',
   components: {
     VTable
   },

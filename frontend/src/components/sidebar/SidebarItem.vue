@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .sidebar-item {
-  @apply flex items-center text-gray-400 hover:bg-gray-900 hover:text-white cursor-pointer px-3 h-12;
+  @apply flex items-center hover:bg-gray-900 hover:text-white cursor-pointer px-3 h-12;
 }
 
 .sidebar-item-icon {

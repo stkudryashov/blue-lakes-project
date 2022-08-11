@@ -34,4 +34,8 @@ body {
 .layout-content {
   @apply flex flex-1;
 }
+
+.router-link-active {
+  @apply text-white;
+}
 </style>

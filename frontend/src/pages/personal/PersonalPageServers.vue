@@ -36,7 +36,7 @@ import { AccountsAPI } from '../../api/accounts/index.js'
 
 
 export default {
-  name: 'PersonalServersPage',
+  name: 'PersonalPageServers',
   components: {
     VTable
   },

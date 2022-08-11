@@ -93,7 +93,5 @@ export default {
 </script>
 
 <style scoped>
-.router-link-active {
-  @apply text-white;
-}
+
 </style>

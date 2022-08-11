@@ -1,5 +1,5 @@
 <template>
-  <aside class="bg-gray-800 w-64" :class="{ 'w-12': isCollapsed }" style="transition: width 0.5s ease">
+  <aside class="bg-gray-800 w-64 text-gray-400" :class="{ 'w-12': isCollapsed }" style="transition: width 0.5s ease">
     <div class="flex flex-col">
       <!-- Collapse Button -->
       <div @click="sidebarShow" class="flex items-center justify-end px-3 h-12 text-gray-400 hover:text-white">
